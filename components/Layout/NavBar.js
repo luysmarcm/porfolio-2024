@@ -2,17 +2,22 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
-const links = [
-	{ name: "Inicio", href: "/", current: false },
-	{ name: "Sobre Nosotros", href: "#aboutUS", current: false },
-	{ name: "Servicios", href: "#services", current: false },
-	{ name: "Metodologia", href: "#howWill", current: false },
-	{ name: "English", href: "/conductores", current: false },
-];
+
 
 const NavBar = () => {
 	const [isSideMenuOpen, setisSideMenuOpen] = useState(false);
+	// const { t } = useTranslations();
+	const  t  = useTranslations("NavBar");
+
+	const links = [
+		{ name: "links1", href: "href1", current: false },
+		{ name: "links2", href: "href2", current: false },
+		{ name: "links3", href: "href3", current: false },
+		{ name: "links4", href: "href4", current: false },
+		{ name: "links5", href: "href5", current: false },
+	];
 
 	const showSideMenu = () => {
 		setisSideMenuOpen(!isSideMenuOpen);
@@ -35,13 +40,13 @@ const NavBar = () => {
 				<div className="flex lg:content-center justify-between md:w-1/2 md:justify-end ">
 					<ul className="list-reset hidden lg:flex justify-between flex-1 md:flex-none items-center">
 						<li className="mr-3">
-							{links.map((item) => (
+							{links.map((link) => (
 								<a
-									key={item.name}
-									href={item.href}
+									key={link.name}
+									href={t(link.href)}
 									className="px-3 py-2 rounded-md text-md lg:text-lg text-white hover:text-secundary"
 								>
-									{item.name}
+									{t(link.name)}
 								</a>
 							))}
 						</li>
@@ -50,7 +55,7 @@ const NavBar = () => {
 							className="rounded-full font-bold text-primary bg-m lg:px-5 lg:py-1 hover:bg-secundary"
 							type="submit"
 						>
-							Contactanos
+							{t("buttonCont")}
 						</button>
 					</ul>
 
@@ -75,12 +80,12 @@ const NavBar = () => {
 					>
 						<ul className="flex flex-col p-10 justify-center space-y-3 bg-primary text-center">
 							{links.map((item) => (
-								<li key={item.name}>
+								<li key={t(item.name)}>
 									<a
-										href={item.href}
+										href={t(item.href)}
 										className="px-3 py-2 rounded-md text-2xl lg:text-lg text-white hover:text-secundary"
 									>
-										{item.name}
+										{t(item.name)}
 									</a>
 								</li>
 							))}
@@ -88,7 +93,7 @@ const NavBar = () => {
 								className="rounded-full font-semibold  text-primary bg-m px-5 py-1 hover:bg-secundary"
 								type="submit"
 							>
-								Contactanos
+								{t("buttonCont")}
 							</button>
 						</ul>
 					</div>

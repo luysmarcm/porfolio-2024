@@ -4,35 +4,32 @@ import HeadingPage from "../HeadingPage/HeadingPage";
 import Image from "next/image";
 import Error from "./Error";
 import emailjs from "emailjs-com";
+import { useTranslations } from "next-intl";
 
 const Contact = () => {
-	
+	const t = useTranslations("Contact");
+	// funciona ojo
+    const [formData, setFormData] = useState({
+				nombre: "",
+				telefono: "",
+				email: "",
+				estado: "",
+				ciudad: "",
+				codigoPostal: "",
+			});
 
-    // funciona ojo
-         const [formData, setFormData] = useState({
-						nombre: "",
-						telefono: "",
-						email: "",
-						estado: "",
-						ciudad: "",
-						codigoPostal: "",
-					});
-
-					const handleChange = (e) => {
-						const { name, value } = e.target;
-						setFormData({ ...formData, [name]: value });
-					};
-
-					const handleSubmit = (e) => {
-						e.preventDefault();
-						emailjs
-							.sendForm(
-											"lifeimprovement",
-									"template_87c1vdx",
-								// 			form.current,
-								// 			"7bIc42U8JY4eMLcX8"
-								e.target,
-								"7bIc42U8JY4eMLcX8"
+			const handleChange = (e) => {
+				const { name, value } = e.target;
+					setFormData({ ...formData, [name]: value });
+			};
+		const handleSubmit = (e) => {
+			e.preventDefault();
+				emailjs
+				.sendForm(
+				"lifeimprovement",
+				"template_87c1vdx",
+				e.target,
+				"7bIc42U8JY4eMLcX8"
 							)
 							.then(
 								(result) => {
@@ -52,12 +49,11 @@ const Contact = () => {
 						});
 					};
 
-
 	return (
 		<div id="contact">
-			<HeadingPage text="Estamos listas para brindarte la mejor asesoria correspondiente para tu negocio o tu hogar." />
-			<div className="flex flex-col lg:flex-row items-center py-14 ">
-				<div className="container mx-auto p-4">
+			<HeadingPage text={t("title")} />
+			<div className="flex flex-col lg:flex-row ">
+				<div className="">
 					<form onSubmit={handleSubmit} className="w-full max-w-lg">
 						<div className="flex flex-wrap -mx-3 mb-6 ">
 							<div className="w-full px-3">
@@ -65,7 +61,7 @@ const Contact = () => {
 									className="block tracking-wide text-gray-700 text-xs lg:text-xl font-bold mb-2"
 									htmlFor="nombre"
 								>
-									Nombre y apellido
+									{t("name")}
 								</label>
 								<input
 									className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded-full py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
@@ -82,7 +78,7 @@ const Contact = () => {
 									className="block  tracking-wide text-gray-700 text-xs font-bold mb-2 lg:text-xl"
 									htmlFor="telefono"
 								>
-									Telefono
+									{t("phone")}
 								</label>
 								<input
 									className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded-full py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
@@ -99,7 +95,7 @@ const Contact = () => {
 									className="block  tracking-wide text-gray-700 text-xs font-bold mb-2 lg:text-xl"
 									htmlFor="email"
 								>
-									Email
+									{t("email")}
 								</label>
 								<input
 									className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded-full py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
@@ -114,16 +110,16 @@ const Contact = () => {
 							<div className="w-full px-3">
 								<label
 									className="block  tracking-wide text-gray-700 text-xs font-bold mb-2 lg:text-xl"
-									htmlFor="telefono"
+									htmlFor="state"
 								>
-									Estado
+									{t("state")}
 								</label>
 								<input
 									className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded-full py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
 									id="estado"
 									type="text"
 									// placeholder="Telefono"
-									name="telefono"
+									name="city"
 									onChange={handleChange}
 									value={formData.estado}
 								/>
@@ -133,7 +129,7 @@ const Contact = () => {
 									className="block  tracking-wide text-gray-700 text-xs font-bold mb-2 lg:text-xl"
 									htmlFor="telefono"
 								>
-									Ciudad
+									{t("city")}
 								</label>
 								<input
 									className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded-full py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
@@ -150,7 +146,7 @@ const Contact = () => {
 									className="block  tracking-wide text-gray-700 text-xs font-bold mb-2 lg:text-xl"
 									htmlFor="telefono"
 								>
-									Codigo Postal
+									{t("zipCode")}
 								</label>
 								<input
 									className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded-full py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
@@ -170,7 +166,7 @@ const Contact = () => {
 									className="rounded-full font-semibold text-white bg-primary px-5 py-1 hover:bg-secundary"
 									type="submit"
 								>
-									Enviar
+									{t("buttonE")}
 								</button>
 							</div>
 						</div>
@@ -187,7 +183,10 @@ const Contact = () => {
 								height={100}
 							/>
 						</div>
-						<span>+1000000000</span>
+						<div className="flex flex-col">
+							<h className="font-bold">{t("whatsApp")}</h>
+							<h>+1000000000</h>
+						</div>
 					</div>
 					<div className="flex items-center mt-2">
 						<Image
@@ -196,7 +195,10 @@ const Contact = () => {
 							width={100}
 							height={100}
 						/>
-						<span>lifeimprovement@example.com</span>
+						<div className="flex flex-col">
+							<h className="font-bold">{t("emailE")}</h>
+							<h>lifeimprovement@example.com</h>
+						</div>
 					</div>
 					<div className="flex items-center mt-2">
 						<Image
@@ -205,7 +207,10 @@ const Contact = () => {
 							width={100}
 							height={100}
 						/>
-						<span>00000 dirección</span>
+						<div className="flex flex-col">
+							<h className="font-bold">{t("address")}</h>
+							<h>lifeimprovement@example.com</h>
+						</div>
 					</div>
 				</div>
 			</div>

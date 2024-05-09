@@ -1,0 +1,76 @@
+{
+  "NavBar":{
+    "links1": "Inicio",
+    "href1":"/",
+    "links2": "Nosotros",
+    "href2":"#aboutUs",
+    "links3":"Servicios",
+    "href3":"#services",
+    "links4":"Metodologia",
+    "href4":"#howWill",
+    "links5":"English",
+    "href5":"/en",
+   "buttonCont":"Contactanos"
+  },
+
+  "Banner": {
+    "title": "Hola",
+    "parrafo1": " ¡Seremos su socio confiable en la realización de mejoras para su propiedad! Nos especializamos en ofrecer soluciones efectivas y personalizadas que se adaptan a sus necesidades específicas, garantizando que cada proyecto, grande o pequeño, se pueda llevar a cabo con éxito.",
+    "parrafo2":"Nos hemos dedicado a explorar y proporcionar las mejores opciones disponibles en el mercado, asegurando resultados que no solo cumplen, sino que superan las expectativas de nuestros clientes."
+,
+    "buttonc": "Contacto",
+    "buttons": "Nuestros Servicios!!"
+  },
+  "AboutUs":{
+    "title":"Sobre nosotras",
+    "subTitle":"¿Quienes somos?",
+    "text":"Desde nuestra fundación en 2020, nuestra misión en Monarca Life Improvement ha sido facilitar a nuestros clientes la realización de mejoras en sus propiedades y el impulso de sus negocios, especialmente cuando carecen de los recursos necesarios en el momento crucial. Nos dedicamos a ofrecer soluciones efectivas y personalizadas, buscando constantemente las mejores opciones para satisfacer las necesidades de nuestros clientes y ayudarles a alcanzar sus metas con éxito."
+  },
+  "HowWeWork":{},
+  "Services":{
+    "imagen1":"/image/icono-otorgamos.png",
+    "descripcion1":"para proyectos estéticos y funcionales tanto comerciales como residenciales",
+    "paRes1": "Otorgamos hasta $40.000",
+    "paRes11":"",
+
+    "imagen2":"/image/icono-renovacion.png",
+    "descripcion2":"para las propiedades",
+    "paRes2": "Inspecciones",
+    "paRes22":"completamente gratis",
+
+    "imagen3":"/image/icono-panel-solar.png",
+    "descripcion3":"los problemas que tengas con tu actual",
+    "paRes3": "Resolvemos",
+    "paRes33":"sistema de paneles solares",
+
+    "imagen4":"/image/icono-rentable.png",
+    "descripcion4":"de energía",
+    "paRes4": "Proyectos",
+    "paRes44":"renovable",
+
+    "imagen5":"/image/icono-remodelacion.png",
+    "descripcion5":"residenciales y comerciales",
+    "paRes5": "Remodelaciones",
+    "paRes55":"",
+  
+    "imagen6":"/image/icono-instalacion.png",
+    "descripcion6":"de acondicionadores de agua para",
+    "paRes6": "Instalación",
+    "paRes66":"toda tu propiedad"
+  },
+  "Contact":{
+    "title":"Estamos listas para brindarte la mejor asesoria correspondiente para tu negocio o tu hogar.",
+    "subTitle":"",
+    "name":"Nombre y Apellido",
+    "email":"Correo",
+    "phone":"Telefono",
+    "state":"Estado",
+    "city":"Ciudad",
+    "zipCode":"Codigo Postal",
+    "buttonE":"Enviar",
+    "whatsApp":"WhatsApp",
+    "emailE":"Correo",
+    "address":"Direccion"
+  }
+
+}

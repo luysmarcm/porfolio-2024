@@ -1,54 +1,96 @@
 import Image from 'next/image';
 import React from 'react'
 import CardSpecialize from '../Card/CardSpecialize';
+import { useTranslations } from 'next-intl';
 
-const items = [
-	{
-		id: 1,
-		imagen: "/image/icono-otorgamos.png",
-		descripcion:
-			"para proyectos estéticos y funcionales tanto comerciales como residenciales",
-		paRes: "Otorgamos hasta $40.000",
-		paRes2: "",
-	},
-	{
-		id: 2,
-		imagen: "/image/icono-renovacion.png",
-		descripcion: "para las propiedades",
-		paRes: "Inspecciones",
-		paRes2: "completamente gratis",
-	},
-	{
-		id: 3,
-		imagen: "/image/icono-panel-solar.png",
-		descripcion: "los problemas que tengas con tu actual",
-		paRes: "Resolvemos",
-		paRes2: "sistema de paneles solares",
-	},
-	{
-		id: 4,
-		imagen: "/image/icono-rentable.png",
-		descripcion: "de energía",
-		paRes: "Proyectos",
-		paRes2: "renovable",
-	},
-	{
-		id: 5,
-		imagen: "/image/icono-remodelacion.png",
-		descripcion: "residenciales y comerciales",
-		paRes: "Remodelaciones",
-		paRes2: "",
-	},
-	{
-		id: 6,
-		imagen: "/image/icono-instalacion.png",
-		descripcion: "de acondicionadores de agua para",
-		paRes: "Instalación",
-		paRes2: "toda tu propiedad",
-	},
-];
+// const items = [
+// 	{
+// 		id: 1,
+// 		imagen: "/image/icono-otorgamos.png",
+// 		descripcion:
+// 			"para proyectos estéticos y funcionales tanto comerciales como residenciales",
+// 		paRes: "Otorgamos hasta $40.000",
+// 		paRes2: "",
+// 	},
+// 	{
+// 		id: 2,
+// 		imagen: "/image/icono-renovacion.png",
+// 		descripcion: "para las propiedades",
+// 		paRes: "Inspecciones",
+// 		paRes2: "completamente gratis",
+// 	},
+// 	{
+// 		id: 3,
+// 		imagen: "/image/icono-panel-solar.png",
+// 		descripcion: "los problemas que tengas con tu actual",
+// 		paRes: "Resolvemos",
+// 		paRes2: "sistema de paneles solares",
+// 	},
+// 	{
+// 		id: 4,
+// 		imagen: "/image/icono-rentable.png",
+// 		descripcion: "de energía",
+// 		paRes: "Proyectos",
+// 		paRes2: "renovable",
+// 	},
+// 	{
+// 		id: 5,
+// 		imagen: "/image/icono-remodelacion.png",
+// 		descripcion: "residenciales y comerciales",
+// 		paRes: "Remodelaciones",
+// 		paRes2: "",
+// 	},
+// 	{
+// 		id: 6,
+// 		imagen: "/image/icono-instalacion.png",
+// 		descripcion: "de acondicionadores de agua para",
+// 		paRes: "Instalación",
+// 		paRes2: "toda tu propiedad",
+// 	},
+// ];
 
 const WeSpecialize = () => {
+
+	const t = useTranslations("Services");
+
+	const items = [
+		{
+			imagen: "imagen1",
+			descripcion: "descripcion1",
+			paRes1: "paRes1",
+			paRes2: "paRes11",
+		},
+		{
+			imagen: "imagen2",
+			descripcion: "descripcion2",
+			paRes1: "paRes2",
+			paRes2: "paRes22",
+		},
+		{
+			imagen: "imagen3",
+			descripcion: "descripcion3",
+			paRes1: "paRes3",
+			paRes2: "paRes33",
+		},
+		{
+			imagen: "imagen4",
+			descripcion: "descripcion4",
+			paRes1: "paRes4",
+			paRes2: "paRes44",
+		},
+		{
+			imagen: "imagen5",
+			descripcion: "descripcion5",
+			paRes1: "paRes5",
+			paRes2: "paRes55",
+		},
+		{
+			imagen: "imagen6",
+			descripcion: "descripcion6",
+			paRes1: "paRes6",
+			paRes2: "paRes66",
+		},
+	];
 
   return (
 		// <div className="">
@@ -123,9 +165,9 @@ const WeSpecialize = () => {
 				</div>
 				<div className="py-24 auto-cols-max grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-10 lg:gap-y-8  place-content-between  ">
 					{items.map((item) => (
-						<CardSpecialize key={item.id} item={item} />
+						<CardSpecialize key={item.id} item={item} t={t} />
 					))}
-				</div>
+				</div> 
 			</div>
 		</section>
 	);

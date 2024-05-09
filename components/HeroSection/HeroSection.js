@@ -1,8 +1,10 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 
 const HeroSection = () => {
-    const bag2 = "/image/banner.webp";
+    const t = useTranslations("Banner");
+
 	return (
 		<div
 			id="home"
@@ -20,27 +22,21 @@ const HeroSection = () => {
 					</h2>
 					<br />
 					<p className="text-center lg:text-left text-base md:text-base text-black font-semibold">
-						¡Seremos su socio confiable en la realización de mejoras para su
-						propiedad! Nos especializamos en ofrecer soluciones efectivas y
-						personalizadas que se adaptan a sus necesidades específicas,
-						garantizando que cada proyecto, grande o pequeño, se pueda llevar a
-						cabo con éxito.
+						{t("parrafo1")}
 						<br />
 						<br />
-						Nos hemos dedicado a explorar y proporcionar las mejores opciones
-						disponibles en el mercado, asegurando resultados que no solo
-						cumplen, sino que superan las expectativas de nuestros clientes.
+						{t("parrafo2")}
 					</p>
 					<div className="flex flex-row space-x-4 justify-start py-6">
 						<button className="rounded-full font-light text-white bg-primary px-5 py-1 hover:bg-secundary">
 							<div className="text-center inline-flex items-center relative">
-								<span className="px-1 font-bold">Contacto</span>
+								<span className="px-1 font-bold">{t("buttonc")}</span>
 							</div>
 						</button>
 
 						<button className="rounded-full font-light text-white bg-primary px-5 py-1 hover:bg-secundary">
 							<div className="text-center inline-flex items-center relative">
-								<span className="px-1 font-bold">Nuestros Servicios</span>
+								<span className="px-1 font-bold">{t("buttons")}</span>
 							</div>
 						</button>
 					</div>

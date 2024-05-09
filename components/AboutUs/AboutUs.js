@@ -1,14 +1,15 @@
 import Image from 'next/image';
 import React from 'react'
-import WeSpecialize from '../ServicesM/WeSpecialize';
-import HowWill from '../HowWill/HowWill';
+import { useTranslations } from 'next-intl';
 
 
 
 const AboutUs = () => {
+	const t = useTranslations("AboutUs");
+
   return (
 		<section
-			id="aboutUS"
+			id="aboutUs"
 			// className="min-h-screen w-full p-2 lg:p-10"
 			className="p-3 lg:p-0 lg:py-10"
 		>
@@ -27,24 +28,15 @@ const AboutUs = () => {
 				<div className="flex flex-col space-y-7 lg:space-y-5 items-center lg:items-end  lg:w-1/2">
 					<div className="text-center">
 						<h2 className=" text-2xl lg:text-2xl font-extrabold text-primary">
-							Sobre nosotras
+							{t("title")}
 						</h2>
 						<div className="w-14 border-t-8  border-secundary " />
 					</div>
 
 					<h1 className="text-3xl lg:text-6xl font-extrabold text-primary">
-						¿Quienes somos?
+						{t("subTitle")}
 					</h1>
-					<p className="text-base lg:text-xl text-justify">
-						Desde nuestra fundación en 2020, nuestra misión en Monarca Life
-						Improvement ha sido facilitar a nuestros clientes la realización de
-						mejoras en sus propiedades y el impulso de sus negocios,
-						especialmente cuando carecen de los recursos necesarios en el
-						momento crucial. Nos dedicamos a ofrecer soluciones efectivas y
-						personalizadas, buscando constantemente las mejores opciones para
-						satisfacer las necesidades de nuestros clientes y ayudarles a
-						alcanzar sus metas con éxito
-					</p>
+					<p className="text-base lg:text-xl text-justify">{t("text")}</p>
 				</div>
 			</div>
 		</section>
