@@ -14,13 +14,13 @@ const Footer = () => {
 			<div className="px-6 pb-8 pt-16 md:px-20">
 				<div className="relative">
 					<div style={{ width: "200px" }}>
-						<Image
+						{/* <Image
 							src="/image/drivok-11.png"
 							alt="Logo"
 							width={384}
 							height={126}
 							priority
-						/>
+						/> */}
 					</div>
 				</div>
 				<div className="py-10 grid grid-cols-1 lg:grid-cols-4 lg:space-y-0 pb-8 md:pb-16 lg:gap-20 place-content-center ">

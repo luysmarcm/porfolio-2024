@@ -1,17 +1,18 @@
 import Image from 'next/image';
 import React from 'react'
-import WeSpecialize from './WeSpecialize';
+import WeSpecialize from '../ServicesM/WeSpecialize';
+import HowWill from '../HowWill/HowWill';
 
 
 
 const AboutUs = () => {
   return (
 		<section
-			id="aboutme"
+			id="aboutUS"
 			// className="min-h-screen w-full p-2 lg:p-10"
 			className="p-3 lg:p-0 lg:py-10"
 		>
-			<div className="flex items-center flex-col-reverse justify-center w-full lg:flex-row 	lg:justify-around gap-y-10">
+			<div className="flex items-center flex-col justify-center w-full lg:flex-row 	lg:justify-around gap-y-10">
 				<div className="max-w-sm  lg:max-w-xl lg:w-1/2 lg:justify-center">
 					<div className="lg:relative lg:z-20">
 						<Image
@@ -46,7 +47,6 @@ const AboutUs = () => {
 					</p>
 				</div>
 			</div>
-			<WeSpecialize />
 		</section>
 	);
 }

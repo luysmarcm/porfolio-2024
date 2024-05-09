@@ -5,9 +5,9 @@ import { useState } from "react";
 
 const links = [
 	{ name: "Inicio", href: "/", current: false },
-	{ name: "Sobre Nosotros", href: "#pasajeros", current: false },
-	{ name: "Servicios", href: "/conductores", current: false },
-	{ name: "Metodologia", href: "/conductores", current: false },
+	{ name: "Sobre Nosotros", href: "#aboutUS", current: false },
+	{ name: "Servicios", href: "#services", current: false },
+	{ name: "Metodologia", href: "#howWill", current: false },
 	{ name: "English", href: "/conductores", current: false },
 ];
 
@@ -30,14 +30,6 @@ const NavBar = () => {
 								height="326"
 							/>
 						</div>
-						{/* <div className="hidden lg:flex">
-							<Image
-								src="/images/monarca-logo.svg"
-								alt="Logo"
-								width="70"
-								height="50"
-							/>
-						</div> */}
 					</Link>
 				</div>
 				<div className="flex lg:content-center justify-between md:w-1/2 md:justify-end ">
@@ -53,7 +45,15 @@ const NavBar = () => {
 								</a>
 							))}
 						</li>
+						<button
+							href=""
+							className="rounded-full font-bold text-primary bg-m lg:px-5 lg:py-1 hover:bg-secundary"
+							type="submit"
+						>
+							Contactanos
+						</button>
 					</ul>
+
 					<button
 						aria-label="Abrir menu"
 						onClick={() => {
@@ -84,6 +84,12 @@ const NavBar = () => {
 									</a>
 								</li>
 							))}
+							<button
+								className="rounded-full font-semibold  text-primary bg-m px-5 py-1 hover:bg-secundary"
+								type="submit"
+							>
+								Contactanos
+							</button>
 						</ul>
 					</div>
 				</div>
