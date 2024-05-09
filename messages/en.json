@@ -1,0 +1,73 @@
+{
+  "NavBar":{
+    "links1": "Home",
+    "href1":"/",
+    "links2": "About US",
+    "href2":"#aboutUs",
+    "links3":"Services",
+    "href3":"#services",
+    "links4":"Metodologia",
+    "href4":"#howWill",
+    "links5":"Español",
+    "href5":"/es",
+  "buttonCont":"Contact"
+  },
+  "Banner": {
+    "title": "Hola",
+    "parrafo1": "We will be your reliable partner in making improvements to your property! We specialize in offering effective and personalized solutions that adapt to your specific needs, ensuring that every project, big or small, can be carried out successfully.",
+    "parrafo2":"We are dedicated to exploring and providing the best options available on the market, ensuring results that not only accomplish, but exceed the expectations of our customers.",
+    "buttonc": "Contact",
+    "buttons": "Our Services!!"
+  },
+  "AboutUs":{
+    "title":"About Us",
+    "subTitle":"Who are we?",
+    "text":"Since our founding in 2020, our mission at Monarca Life Improvement has been to make it easier for our clients to make improvements to their properties and boost their businesses, especially when they lack the necessary resources at the crucial moment. We are dedicated to offering effective and customized solutions, constantly looking for the best options to satisfy the needs of our clients and help them achieve their goals successfully."
+  },
+  "HowWeWork":{},
+  "Services":{
+    "imagen1":"/image/icono-otorgamos.png",
+    "descripcion1":"or aesthetic and functional projects, both commercial and residential",
+    "paRes1": "We grant up to $40,000",
+    "paRes11":"",
+
+    "imagen2":"/image/icono-renovacion.png",
+    "descripcion2":"property ",
+    "paRes2": "Completely free",
+    "paRes22":"inspections",
+
+    "imagen3":"/image/icono-panel-solar.png",
+    "descripcion3":"the problemes you have with your curent",
+    "paRes3": "We solve ",
+    "paRes33":"solar panel system",
+
+    "imagen4":"/image/icono-rentable.png",
+    "descripcion4":"energy",
+    "paRes4": "Renewable",
+    "paRes44":"projects",
+
+    "imagen5":"/image/icono-remodelacion.png",
+    "descripcion5":"Residential and comercial ",
+    "paRes5": "remodeling",
+    "paRes55":"",
+  
+    "imagen6":"/image/icono-instalacion.png",
+    "descripcion6":"of water conditioners for",
+    "paRes6": "Installation",
+    "paRes66":"your entire property"
+  },
+   "Contact":{
+    "title":"We are ready to provide you with the best advice for your business or home.",
+    "subTitle":"",
+    "name":"First and last name",
+    "email":"Email",
+    "phone":"Phone Number",
+    "state":"State",
+    "city":"City",
+    "zipCode":"Zip Code",
+    "buttonE":"Send",
+    "whatsApp":"WhatsApp",
+    "emailE":"Email",
+    "address":"Address"
+  }
+}
