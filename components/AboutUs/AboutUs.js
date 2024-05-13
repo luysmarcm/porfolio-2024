@@ -11,7 +11,7 @@ const AboutUs = () => {
 		<section
 			id="aboutUs"
 			// className="min-h-screen w-full p-2 lg:p-10"
-			className="p-3 lg:p-0 lg:py-10"
+			className="p-4 lg:p-0 lg:py-10"
 		>
 			<div className="flex items-center flex-col justify-center w-full lg:flex-row 	lg:justify-around gap-y-10">
 				<div className="max-w-sm  lg:max-w-xl lg:w-1/2 lg:justify-center">
@@ -26,11 +26,11 @@ const AboutUs = () => {
 					</div>
 				</div>
 				<div className="flex flex-col space-y-7 lg:space-y-5 items-center lg:items-end  lg:w-1/2">
-					<div className="text-center">
+					<div className="text-center py-6">
 						<h2 className=" text-2xl lg:text-2xl font-extrabold text-primary">
 							{t("title")}
 						</h2>
-						<div className="w-14 border-t-8  border-secundary " />
+						<div className="mt-1 w-14 h-2 bg-secundary inline-block"></div>
 					</div>
 
 					<h1 className="text-3xl lg:text-6xl font-extrabold text-primary">

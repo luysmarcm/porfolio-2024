@@ -17,8 +17,6 @@
 }
 
 body {
-
-  scroll-behavior: smooth;
   padding: 0;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -33,8 +31,21 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.slick-slide img {
+  border: none;
+  outline: none;
+}
+
+.slick-slide:focus {
+  outline: none;
 }

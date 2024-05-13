@@ -11,14 +11,12 @@ const HeroSection = () => {
 			// className="bg-cover bg-center h-screen"
 			// style={{ backgroundImage: `url(${bag2})` }}
 			// className="relative bg-[url('/image/banner.webp')] bg-cover bg-no-repeat bg-center bg-fixed py-16 lg:py-32"
-			className="relative bg-[url('/image/banner.webp')] lg:bg-cover bg-no-repeat bg-center bg-fixed py-44 lg:py-32"
+			className="relative bg-[url('/image/banner.webp')] lg:bg-cover bg-no-repeat bg-center bg-fixed pt-24 lg:pt-32"
 		>
 			<div className="flex items-center flex-col-reverse justify-center w-full lg:flex-row lg:justify-around gap-y-10">
 				<div className="lg:text-start px-10 lg:w-1/2 ">
 					<h2 className="text-center lg:text-left text-3xl font-black lg:text-5xl text-primary">
-						Transformación confiable,resultados
-						<br />
-						excepcionales.
+						{t("title")}
 					</h2>
 					<br />
 					<p className="text-center lg:text-left text-base md:text-base text-black font-semibold">
@@ -27,7 +25,7 @@ const HeroSection = () => {
 						<br />
 						{t("parrafo2")}
 					</p>
-					<div className="flex flex-row space-x-4 justify-start py-6">
+					<div className="flex flex-row space-x-4 justify-center lg:justify-start py-6">
 						<button className="rounded-full font-light text-white bg-primary px-5 py-1 hover:bg-secundary">
 							<div className="text-center inline-flex items-center relative">
 								<span className="px-1 font-bold">{t("buttonc")}</span>

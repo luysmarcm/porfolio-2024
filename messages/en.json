@@ -13,11 +13,11 @@
   "buttonCont":"Contact"
   },
   "Banner": {
-    "title": "Hola",
+    "title": "Creating spaces, exceeding expectations.",
     "parrafo1": "We will be your reliable partner in making improvements to your property! We specialize in offering effective and personalized solutions that adapt to your specific needs, ensuring that every project, big or small, can be carried out successfully.",
     "parrafo2":"We are dedicated to exploring and providing the best options available on the market, ensuring results that not only accomplish, but exceed the expectations of our customers.",
     "buttonc": "Contact",
-    "buttons": "Our Services!!"
+    "buttons": "Our Services"
   },
   "AboutUs":{
     "title":"About Us",
@@ -26,6 +26,7 @@
   },
   "HowWeWork":{},
   "Services":{
+    "title":"We specialize in",
     "imagen1":"/image/icono-otorgamos.png",
     "descripcion1":"or aesthetic and functional projects, both commercial and residential",
     "paRes1": "We grant up to $40,000",
@@ -56,7 +57,7 @@
     "paRes6": "Installation",
     "paRes66":"your entire property"
   },
-   "Contact":{
+  "Contact":{
     "title":"We are ready to provide you with the best advice for your business or home.",
     "subTitle":"",
     "name":"First and last name",
@@ -67,7 +68,44 @@
     "zipCode":"Zip Code",
     "buttonE":"Send",
     "whatsApp":"WhatsApp",
+    "phoneE":"Phone",
     "emailE":"Email",
     "address":"Address"
+  },
+  "Customers":{
+    "title":"What do our customers say?",
+    "text":"Discover our clients' success stories and how we have transformed their properties with customized solutions.",
+    "buttons":"More",
+    "titleS":"Success Stories!",
+    "photo1":"/image/c1.PNG",
+    "customer1":"Gustavo Cortes",
+    "description1":"Mariana and Maria did a great job on my house, I was able to change my roof at a time when I didn't have the money available and besides that I don't pay any more electricity since I have a solar panel system and now my bills are negative, I don't pay to the electric company.",
+    "video1":"",
+    "photo2":"/image/c2.PNG",
+    "customer2":"Antonia Campos",
+    "description2":"Monarca life improvement, was the team in charge of doing the remodeling that my house needed such as insolation, window repairs and the completion of one of the kitchen walls, it was a quick and easy process. I also received bonuses that helped me to improve situations in my personal life, this is my first year using solar panels and it has worked very well for me.Besides that they told me at each stage what I needed to do and helped me to do it.",
+    "video2":"",
+    "photo3":"/image/c3.PNG",
+    "customer3":"Héctor Echeverría",
+    "description3":"Working with Monarca fulfilled the expectations I had about the project they designed for me and my family. In the project I had to replace my roof which depended on my real estate insurance and they did not respond, this company helped me to achieve this and also eliminate the electric bill of my property. Now I have $100 in credit and only have 5 months with my solar panels.",
+    "video3":"",
+    "photo4":"/image/c4.PNG",
+    "customer4":"Martha Echeverría",
+    "description4":"For people who do not trust solar systems, I recommend that they only choose a good advisor, who is professional and who will accompany them at all times as these girls did with us.",
+    "video4":"",
+    "photo5":"/image/c5.PNG",
+    "customer5":"Julieta de sosa",
+    "description5":"They are a company that has not ceased to answer my concerns and questions at every moment and during the process in which the renewable energy project for one of my properties was carried out. They have a lot of patience and dedication in what they do.",
+    "video5":""
+  },
+  "Allies":{
+    "title":"Our Allies"
+  },
+  "Footer":{
+    "title":"Do you want more information?",
+    "text":"We are ready to provide you the best advice for your business or home.",
+    "text1":"Social Media",
+    "buttonc":"Contact us"
   }
+
 }

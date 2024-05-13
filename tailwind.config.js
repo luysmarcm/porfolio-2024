@@ -15,16 +15,10 @@ module.exports = {
 				m: "#d1c7bd",
 				b: "#F1D2BB",
 				fondo: "#d1c7bd",
-				rosado: "#FACBC6",
-				rosado2: "#F5867D",
-				progress: "rgba(155, 155, 155, 1)",
-				rosado3: "rgba(250, 203, 198)",
-				rosado4: "#FDECEC",
-				rosado5: "#f9bab4",
+				gris: "#D9D9D9",
 			},
 			fontFamily: {
 				Montserrat: ["Montserrat"],
-				Poppins: ["Poppins"],
 			},
 			maxWidth: {
 				max: "1920px",

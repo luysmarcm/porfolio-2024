@@ -4,8 +4,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 
-
-
 const NavBar = () => {
 	const [isSideMenuOpen, setisSideMenuOpen] = useState(false);
 	// const { t } = useTranslations();
@@ -51,11 +49,10 @@ const NavBar = () => {
 							))}
 						</li>
 						<button
-							href=""
 							className="rounded-full font-bold text-primary bg-m lg:px-5 lg:py-1 hover:bg-secundary"
 							type="submit"
 						>
-							{t("buttonCont")}
+							<a href="#contact">{t("buttonCont")}</a>
 						</button>
 					</ul>
 
@@ -90,6 +87,7 @@ const NavBar = () => {
 								</li>
 							))}
 							<button
+								href="#contact"
 								className="rounded-full font-semibold  text-primary bg-m px-5 py-1 hover:bg-secundary"
 								type="submit"
 							>
