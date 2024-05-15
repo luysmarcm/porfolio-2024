@@ -25,9 +25,9 @@ const Customers = () => {
 						/>
 						Your browser does not support the video tag.
 					</video> */}
-						{/* <Videos /> */}
+						<Videos />
 					</div>
-					<div className="w-full lg:w-1/2 lg:pl-8">
+					<div className="w-full pb-8 lg:w-1/2 lg:pl-8">
 						<div className="text-center lg:text-start py-6">
 							<h2 className="text-3xl lg:text-5xl font-extrabold text-primary">
 								{t("title")}

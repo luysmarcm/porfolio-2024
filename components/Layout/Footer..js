@@ -13,22 +13,18 @@ const Footer = () => {
 	const t = useTranslations("Footer");
 	return (
 		<footer className="bg-fondo p-6 grid-col-3">
-			<div className="grid grid-cols-1 lg:grid-cols-3 lg:space-y-0 pb-8 md:pb-16 gap-4 lg:gap-20 place-items-center ">
-				<div className="pb-6">
-					<div className="relative">
-						<div style={{ width: "300px" }}>
-							<Image
-								src="/image/logo-monarca.png"
-								alt="Logo"
-								width={384}
-								height={126}
-								priority
-							/>
-						</div>
-					</div>
+			<div className="grid grid-cols-1 lg:grid-cols-3 lg:space-y-0 pb-8 md:pb-16 gap-7 lg:gap-20 place-items-start ">
+				<div className="w-3/5">
+					<Image
+						src="/image/logo-monarca.png"
+						alt="Logo"
+						width={384}
+						height={126}
+						priority
+					/>
 				</div>
-				<div className="">
-					<h2 className="text-primary text-3xl lg:text-2xl font-extrabold ">
+				<div className="flex flex-col  space-y-4">
+					<h2 className="text-primary text-3xl lg:text-2xl font-extrabold">
 						{t("title")}
 					</h2>
 					<p className="text-primary text-xl text-start">{t("text")}</p>
@@ -36,11 +32,12 @@ const Footer = () => {
 						<span className="px-1 font-bold">{t("buttonc")}</span>
 					</button>
 				</div>
-				<div className="flex flex-col pb-10 lg:pb-0 space-y-4">
+
+				<div className="flex flex-col space-y-4">
 					<h2 className="text-primary text-3xl lg:text-2xl font-extrabold">
 						{t("text1")}
 					</h2>
-					<ul className="space-y-4">
+					<ul className="">
 						<li className="flex flex-col space-y-4">
 							<div className="flex space-x-4">
 								<a

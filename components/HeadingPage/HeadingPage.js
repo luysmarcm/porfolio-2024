@@ -3,7 +3,7 @@ import React from 'react'
 const HeadingPage = (props) => {
   return (
 		<div
-			className="relative text-center bg-cover bg-center h-32"
+			className="relative text-center bg-cover bg-center h-44 lg:h-32"
 			style={{ backgroundImage: 'url("/image/headingPage.png")' }}
 		>
 			<div className="absolute inset-0 flex items-center justify-center px-2 ">

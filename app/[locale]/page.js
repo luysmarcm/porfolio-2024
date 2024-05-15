@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection/HeroSection";
 import WeSpecialize from "@/components/ServicesM/WeSpecialize";
 import Customers from "@/components/Customers/Customers";
 import OurAllies from "@/components/Allies/OurAllies";
+import HowWill from "@/components/HowWill/HowWill";
 
 export default function Home() {
 
@@ -12,6 +13,7 @@ export default function Home() {
 			<HeroSection />
 			<AboutUs />
 			<WeSpecialize />
+			<HowWill/>
 			<Customers />
 			<Contact />
 			<OurAllies />

@@ -8,12 +8,9 @@ const HeroSection = () => {
 	return (
 		<div
 			id="home"
-			// className="bg-cover bg-center h-screen"
-			// style={{ backgroundImage: `url(${bag2})` }}
-			// className="relative bg-[url('/image/banner.webp')] bg-cover bg-no-repeat bg-center bg-fixed py-16 lg:py-32"
 			className="relative bg-[url('/image/banner.webp')] lg:bg-cover bg-no-repeat bg-center bg-fixed pt-24 lg:pt-32"
 		>
-			<div className="flex items-center flex-col-reverse justify-center w-full lg:flex-row lg:justify-around gap-y-10">
+			<div className="flex items-center flex-col-reverse justify-center w-full lg:flex-row lg:justify-around gap-y-10 ">
 				<div className="lg:text-start px-10 lg:w-1/2 ">
 					<h2 className="text-center lg:text-left text-3xl font-black lg:text-5xl text-primary">
 						{t("title")}
@@ -40,7 +37,7 @@ const HeroSection = () => {
 					</div>
 				</div>
 
-				<div className="max-w-sm  lg:max-w-xl lg:w-1/2 lg:justify-center">
+				<div className="max-w-sm w-3/5 lg:max-w-xl lg:w-1/2 lg:justify-center">
 					<Image
 						src="/image/logo-monarca.png"
 						alt="Monarca"

@@ -19,14 +19,18 @@
     "parrafo2":"Nos hemos dedicado a explorar y proporcionar las mejores opciones disponibles en el mercado, asegurando resultados que no solo cumplen, sino que superan las expectativas de nuestros clientes."
 ,
     "buttonc": "Contacto",
-    "buttons": "Nuestros Servicios!!"
+    "buttons": "Nuestros Servicios"
   },
   "AboutUs":{
     "title":"Sobre nosotras",
     "subTitle":"¿Quienes somos?",
     "text":"Desde nuestra fundación en 2020, nuestra misión en Monarca Life Improvement ha sido facilitar a nuestros clientes la realización de mejoras en sus propiedades y el impulso de sus negocios, especialmente cuando carecen de los recursos necesarios en el momento crucial. Nos dedicamos a ofrecer soluciones efectivas y personalizadas, buscando constantemente las mejores opciones para satisfacer las necesidades de nuestros clientes y ayudarles a alcanzar sus metas con éxito."
   },
-  "HowWeWork":{},
+  "HowWeWork":{
+    "title":"¿Como lo haremos?",
+    "text1":"Para comenzar, coordinaremos una cita contigo y tu familia para realizar un diagnóstico detallado de la situación actual que estás enfrentando. Luego, te presentaremos las opciones de solución más adecuadas para tus necesidades específicas.",
+    "text2":"Estas podrían incluir desde el reemplazo de aislamiento o techo, hasta cambiar tu proveedor de energía eléctrica. Nuestro objetivo es ofrecerte alternativas personalizadas que respondan efectivamente a tus requerimientos."
+  },
   "Services":{
     "title":"Nos especializamos en",
     "imagen1":"/image/icono-otorgamos.png",

@@ -59,7 +59,7 @@ const Contact = () => {
 		<div id="contact">
 			<HeadingPage text={t("title")} />
 			<div className=" mx-auto my-8 p-5 lg:px-28">
-				<div className="flex flex-col lg:flex-row justify-center items-center px-0">
+				<div className="flex flex-col lg:flex-row justify-center items-center px-0 place-content-between">
 					<div className="w-full lg:w-1/2">
 						<form onSubmit={handleSubmit} className="w-full max-w-lg">
 							<div className="flex flex-wrap -mx-3 mb-6 ">

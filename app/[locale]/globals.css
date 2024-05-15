@@ -49,3 +49,12 @@ html {
 .slick-slide:focus {
   outline: none;
 }
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 300px; /* Ajusta este valor según el tamaño que desees */
+}
