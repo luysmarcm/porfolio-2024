@@ -9,23 +9,13 @@ const Customers = () => {
   const t = useTranslations("Customers");
   return (
 		<section className="">
-			<div className="container mx-auto my-8 p-5">
+			<div data-aos="fade-up" className="container mx-auto my-8 p-5">
 				<div className="flex flex-col-reverse lg:flex-row justify-center items-center">
 					<div className="w-full lg:w-1/2">
-						{/* <video width="320" height="240" controls preload="none">
-						<source
-							src="https://www.youtube.com/watch?v=Xe6cSxXm4OM"
-							type="video/mp4"
-						/>
-						<track
-							src="/path/to/captions.vtt"
-							kind="subtitles"
-							srcLang="en"
-							label="English"
-						/>
-						Your browser does not support the video tag.
-					</video> */}
-						<Videos />
+						<video className="w-full md:w-3/4 lg:w-full rounded-lg" controls>
+							<source src="/videos/video-mo.mp4" type="video/mp4" />
+							Tu navegador no soporta la etiqueta de video.
+						</video>
 					</div>
 					<div className="w-full pb-8 lg:w-1/2 lg:pl-8">
 						<div className="text-center lg:text-start py-6">
@@ -44,7 +34,7 @@ const Customers = () => {
 				</div>
 			</div>
 
-			{/* <Stories t={t} /> */}
+			<Stories t={t} />
 		</section>
 		// <>
 		// 	<section className="text-gray-700 body-font">

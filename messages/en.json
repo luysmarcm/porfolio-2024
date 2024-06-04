@@ -3,26 +3,38 @@
     "links1": "Home",
     "href1":"/",
     "links2": "About US",
-    "href2":"#aboutUs",
+    "href2":"about",
     "links3":"Services",
-    "href3":"#services",
+    "href3":"/#services",
     "links4":"Metodologia",
-    "href4":"#howWill",
+    "href4":"/#howWill",
     "links5":"Español",
     "href5":"/es",
   "buttonCont":"Contact"
   },
   "Banner": {
     "title": "Creating spaces, exceeding expectations.",
-    "parrafo1": "We will be your reliable partner in making improvements to your property! We specialize in offering effective and personalized solutions that adapt to your specific needs, ensuring that every project, big or small, can be carried out successfully.",
-    "parrafo2":"We are dedicated to exploring and providing the best options available on the market, ensuring results that not only accomplish, but exceed the expectations of our customers.",
+    "parrafo1": "Your reliable partner to improve your property! We offer customized and effective solutions for projects of any size, guaranteeing results that exceed your expectations.",
     "buttonc": "Contact",
     "buttons": "Our Services"
   },
   "AboutUs":{
+    "heading":"¿Who are we?",
     "title":"About Us",
-    "subTitle":"Who are we?",
-    "text":"Since our founding in 2020, our mission at Monarca Life Improvement has been to make it easier for our clients to make improvements to their properties and boost their businesses, especially when they lack the necessary resources at the crucial moment. We are dedicated to offering effective and customized solutions, constantly looking for the best options to satisfy the needs of our clients and help them achieve their goals successfully."
+    "subTitle":"Why choose us?",
+    "text":"Since our founding in 2020, our mission at Monarca Life Improvement has been to make it easier for our clients to make improvements to their properties and boost their businesses, especially when they lack the necessary resources at the crucial moment. We are dedicated to offering effective and customized solutions, constantly looking for the best options to satisfy the needs of our clients and help them achieve their goals successfully.",
+    "mision":"Mission",
+    "textM":"Lorem ipsum dolor sitamet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam",
+    "vision":"Vision",
+    "textV":"Lorem ipsum dolor sitamet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam",
+    "title1":"Enfoque personalizado",
+    "text1":"Trabajamos de manera individualizada  centrándonos  en las necesidades específicas de cada cliente, ofreciendo soluciones personalizadas y adaptadas a sus requerimientos particulares. Mientras que una compañía general puede ofrecer servicios estándar para una amplia audiencia sin tener en cuenta las necesidades individuales de cada cliente.",
+    "title2":"Flexibilidad en los servicios",
+    "text2":"Siempre encontramos la manera de adaptarnos fácilmente a las necesidades cambiantes de cada cliente sin importar las limitaciones financieras o económicas. Debido a que tenemos una amplia variedad de opciones con beneficios monetarios para nuestros consumidores.",
+    "title3":"Servicios sin costó",
+    "text3":"Uno de nuestros principales atractivos es que ofrecemos una inspección general a las propiedades sin ningún costó así como también las auditorias para sistemas solares inefectivos, con la finalidad de generar confianza y seguridad entre el cliente y la compañía.",
+    "title4":"Atención al cliente",
+    "text4":"Debido a que trabajamos de forma  individualizada logramos ofrecer un servicio al cliente más personalizado y de alta calidad, brindando un soporte más cercano y una comunicación más directa con cada cliente."
   },
   "HowWeWork":{
     "title":"How will we do it?",
@@ -106,6 +118,15 @@
   },
   "Allies":{
     "title":"Our Allies"
+  },
+  "GetQuote":{
+    "title":"¿Quieres más información?",
+    "text":"Enter Zip Code",
+    "text1":"Encuentranos",
+    "buttonc":"Get Started",
+    "alert":"We’re sorry, is not currently in an area we support.",
+    "subTitle":"",
+    "buttonClo":"Cerrar"
   },
   "Footer":{
     "title":"Do you want more information?",

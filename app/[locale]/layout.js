@@ -2,10 +2,9 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer.";
-import { useLocale } from "next-intl";
-import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { AOSInit } from "@/aos"
 
 const montse = Montserrat({ subsets: ["latin"] });
 
@@ -21,6 +20,7 @@ export default async function LocaleLayout({ children, params }) {
 
 	return (
 		<html lang={params.locale}>
+			<AOSInit />
 			<body>
 				<NextIntlClientProvider messages={messages}>
 					<Header />

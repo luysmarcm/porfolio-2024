@@ -3,18 +3,28 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { useRouter } from 'next/navigation'
+// import { locales } from "@/navigation";
+import { useLocale } from "next-intl";
+import LocalSwitcher from "../Local-switcher";
+
+
 
 const NavBar = () => {
 	const [isSideMenuOpen, setisSideMenuOpen] = useState(false);
 	// const { t } = useTranslations();
-	const  t  = useTranslations("NavBar");
+	const t = useTranslations("NavBar");
+	const localActive = useLocale();
+	const router = useRouter();
+	const { pathname } = router;
+	console.log(pathname);
 
 	const links = [
 		{ name: "links1", href: "href1", current: false },
 		{ name: "links2", href: "href2", current: false },
 		{ name: "links3", href: "href3", current: false },
 		{ name: "links4", href: "href4", current: false },
-		{ name: "links5", href: "href5", current: false },
+		// { name: "links5", href: "href5", current: false },
 	];
 
 	const showSideMenu = () => {
@@ -39,14 +49,24 @@ const NavBar = () => {
 					<ul className="list-reset hidden lg:flex justify-between flex-1 md:flex-none items-center">
 						<li className="mr-3">
 							{links.map((link) => (
-								<a
+								<Link
+									// locales={locales}
 									key={link.name}
-									href={t(link.href)}
+									href={`/${localActive}/${t(link.href)}`}
+									// href={t(link.href)}
 									className="px-3 py-2 rounded-md text-md lg:text-lg text-white hover:text-secundary"
 								>
 									{t(link.name)}
-								</a>
+								</Link>
 							))}
+							<Link
+								// href={`/${localActive}/${t("href5")}`}
+								href={t("href5")}
+								className="px-3 py-2 rounded-md text-md lg:text-lg text-white hover:text-secundary"
+							>
+								{t("links5")}
+							</Link>
+							{/* <LocalSwitcher/> */}
 						</li>
 						<button
 							className="rounded-full font-bold text-primary bg-m lg:px-5 lg:py-1 hover:bg-secundary"

@@ -5,61 +5,102 @@ import Videos from '../Video/Videos';
 
 const CardCustomers = ({ t, item, index }) => {
 	return (
-		<div className=" bg-gris rounded-xl shadow-md overflow-hidden w-1/2 h-full max-h-80">
-			<div className="md:flex">
-				<div className="md:flex-shrink-0">
-					<Image
-						className="h-48 w-full object-cover md:h-full md:w-48 rounded-lg"
-						src={t(item.photo)}
-						alt="Man looking at item at a store"
-						width={448}
-						height={448}
-					/>
+		<div
+			data-aos={`${index % 2 === 0 ? "fade-right" : "fade-left"}`}
+			className="flex flex-col space-y-4 pt-5 lg:flex-row items-center px-4 lg:p-14"
+		>
+			<card
+				className={`bg-fondo rounded-xl shadow-md w-full lg:w-1/2  ${
+					index % 2 === 0 ? "lg:order-first" : "lg:order-last"
+				}`}
+			>
+				<div className="flex flex-col lg:flex-row items-center">
+					<div className="md:flex-shrink-0 p-10 lg:p-10">
+						<Image
+							className="object-cover rounded-lg "
+							src={t(item.photo)}
+							alt="Man looking at item at a store"
+							width={250}
+							height={250}
+						/>
+					</div>
+					<div className="p-8">
+						<div className="flex flex-row">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								className="size-6 text-yellow-500"
+							>
+								<path
+									fillRule="evenodd"
+									d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+									clipRule="evenodd"
+								/>
+							</svg>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								className="size-6 text-yellow-500"
+							>
+								<path
+									fillRule="evenodd"
+									d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+									clipRule="evenodd"
+								/>
+							</svg>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								className="size-6 text-yellow-500"
+							>
+								<path
+									fillRule="evenodd"
+									d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+									clipRule="evenodd"
+								/>
+							</svg>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								className="size-6 text-yellow-500"
+							>
+								<path
+									fillRule="evenodd"
+									d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+									clipRule="evenodd"
+								/>
+							</svg>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								className="size-6 text-yellow-500"
+							>
+								<path
+									fillRule="evenodd"
+									d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+									clipRule="evenodd"
+								/>
+							</svg>
+						</div>
+						<p className="mt-2 text-gray-500 text-base ">
+							{t(item.descripcion)}
+						</p>
+						<span className=" text-lg font-semibold text-gray-700 mr-2 mb-2">
+							{t(item.customer)}
+						</span>
+					</div>
 				</div>
-				<div className="p-8">
-					<p className="mt-2 text-gray-500">{t(item.descripcion)}</p>
-					<span className=" text-sm font-semibold text-gray-700 mr-2 mb-2">
-						{t(item.customer)}
-					</span>
-				</div>
+			</card>
+			<div className="w-full lg:w-1/2">
+				<Videos key={index} t={t} item={item} />
 			</div>
 		</div>
-
-		// <div className="container mx-auto px-4">
-		// 	<div className='bg-gris rounded-lg'>
-		// 		<div
-		// 			className="space-y-4 lg:grid lg:grid-cols-3 lg:items-start  lg:space-y-0"
-		// 		>
-		// 			<a href="https://stackdiary.com/" className="group">
-		// 				<div className="aspect-w-3 aspect-h-2">
-		// 					<Image
-		// 						className="object-cover shadow-lg rounded-lg group-hover:opacity-75"
-		// 						src={t(item.photo)}
-		// 						alt="Featured Photo"
-		// 						width={140}
-		// 						height={100}
-		// 					/>
-		// 				</div>
-		// 			</a>
-		// 			<div className="sm:col-span-2" style={{ cursor: "auto" }}>
-		// 				<div className="mt-2" style={{ cursor: "auto" }}>
-
-		// 					<p
-		// 						className="mt-1 text-sm font-normal text-skin-base leading-5"
-		// 						style={{ cursor: "auto" }}
-		// 					>
-		// 						{t(item.descripcion)}
-		// 					</p>
-		// 				</div>
-		// 			</div>
-		// 		</div>
-		// 	</div>
-		// </div>
-		// <div class="w-64 h-64 overflow-auto bg-white shadow-md rounded-lg p-4">
-		// 	<h2 class="font-bold text-xl mb-2">Título de la tarjeta</h2>
-		// 	<p class="text-gray-700">{t(item.descripcion)}</p>
-		// </div>
-	);
+	); 	
 };
 
 export default CardCustomers

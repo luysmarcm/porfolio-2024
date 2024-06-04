@@ -92,7 +92,7 @@ const OurAllies = () => {
 
 	return (
 		<div className="px-2 lg:px-36  items-center pb-14">
-			<div className="text-center py-6">
+			<div data-aos="fade-up" className="text-center py-6">
 				<h2 className="text-3xl lg:text-5xl font-extrabold text-primary">
 					{t("title")}
 				</h2>
@@ -100,7 +100,7 @@ const OurAllies = () => {
 			</div>
 			<Slider {...settings}>
 				{allies.map((allie, idx) => (
-					<div key={idx} className="slick-slide ">
+					<div data-aos="fade-up" key={idx} className="slick-slide ">
 						<Image
 							src={allie.imagen}
 							alt="About Us"
