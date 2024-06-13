@@ -47,7 +47,7 @@ const FormContact = ({ t }) => {
 		setShowToast(true);
 	};
 	return (
-		<form onSubmit={handleSubmit} className="w-full max-w-lg">
+		<form onSubmit={handleSubmit} className="w-full max-w-lg pt-4 px-4">
 			<div className="flex flex-wrap -mx-3 mb-6 ">
 				<div className="w-full px-3">
 					<label
@@ -60,7 +60,7 @@ const FormContact = ({ t }) => {
 						className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded-full  mb-3  px-5 py-1 leading-tight focus:outline-none focus:bg-white"
 						id="nombre"
 						type="text"
-						// placeholder="Juan Pérez"
+						placeholder="Juan Pérez"
 						name="nombre"
 						value={formData.nombre}
 						onChange={handleChange}
@@ -111,7 +111,7 @@ const FormContact = ({ t }) => {
 						className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded-full  mb-3  px-5 py-1 leading-tight focus:outline-none focus:bg-white"
 						id="estado"
 						type="text"
-						// placeholder="Telefono"
+						placeholder={t("state")}
 						name="estado"
 						onChange={handleChange}
 						value={formData.estado}
@@ -128,7 +128,7 @@ const FormContact = ({ t }) => {
 						className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded-full  mb-3  px-5 py-1 leading-tight focus:outline-none focus:bg-white"
 						id="ciudad"
 						type="text"
-						// placeholder="Telefono"
+						placeholder={t("city")}
 						name="ciudad"
 						value={formData.ciudad}
 						onChange={handleChange}
@@ -145,7 +145,7 @@ const FormContact = ({ t }) => {
 						className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded-full  mb-3  px-5 py-1 leading-tight focus:outline-none focus:bg-white"
 						id="codigoPostal"
 						type="text"
-						// placeholder="Telefono"
+						placeholder={t("zipCode")}
 						name="codigoPostal"
 						value={formData.codigoPostal}
 						onChange={handleChange}

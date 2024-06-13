@@ -106,6 +106,13 @@ const NavBar = () => {
 									</a>
 								</li>
 							))}
+							<Link
+								// href={`/${localActive}/${t("href5")}`}
+								href={t("href5")}
+								className="px-3 py-2 rounded-md text-md lg:text-lg text-white hover:text-secundary"
+							>
+								{t("links5")}
+							</Link>
 							<button
 								href="#contact"
 								className="rounded-full font-semibold  text-primary bg-m px-5 py-1 hover:bg-secundary"

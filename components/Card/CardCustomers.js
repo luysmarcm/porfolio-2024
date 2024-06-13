@@ -18,7 +18,7 @@ const CardCustomers = ({ t, item, index }) => {
 					<div className="md:flex-shrink-0 p-10 lg:p-10">
 						<Image
 							className="object-cover rounded-lg "
-							src={t(item.photo)}
+							src={item.photo}
 							alt="Man looking at item at a store"
 							width={250}
 							height={250}

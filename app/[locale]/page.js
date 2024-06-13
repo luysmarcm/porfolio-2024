@@ -18,7 +18,7 @@ export default function Home() {
 			<Customers />
 			<Contact />
 			<OurAllies />
-			{/* <GetQuote/> */}
+			<GetQuote/>
 		</main>
 	);
 }

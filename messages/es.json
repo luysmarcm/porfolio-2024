@@ -72,7 +72,14 @@
     "imagen6":"/image/icono-instalacion.png",
     "descripcion6":"de acondicionadores de agua para",
     "paRes6": "Instalación",
-    "paRes66":"toda tu propiedad"
+    "paRes66":"toda tu propiedad",
+
+    "messageW1":"Hola, quiero informacion, sobre: Le otorgamiento de $40.000",
+    "messageW2":"Hola, quiero informacion, sobre: Inspecciones",
+    "messageW3":"Hola, quiero informacion, sobre: Paneles solares",
+    "messageW4":"Hola, quiero informacion, sobre: Proyectos de energia",
+    "messageW5":"Hola, quiero informacion, sobre: Remodelaciones",
+    "messageW6":"Hola, quiero informacion, sobre: Instalacion acondicionadores de agua"
   },
   "Contact":{
     "title":"Estamos listas para brindarte la mejor asesoria correspondiente para tu negocio o tu hogar.",
@@ -87,33 +94,24 @@
     "whatsApp":"WhatsApp",
     "phoneE":"Telefono",
     "emailE":"Correo",
-    "address":"Direccion"
+    "address":"Direccion",
+    "message":"¡Formulario enviado con éxito!"
   },
   "Customers":{
     "title":"¿Qué dicen nuestros clientes?",
     "text":"Descubre las historias de éxito de nuestros clientes y cómo hemos transformado sus propiedades con soluciones a medida.",
     "buttons":"Conoce más",
     "titleS":"¡Historias de exitos!",
-    "photo1":"/image/c1.PNG",
     "customer1":"Gustavo Cortes",
     "description1":"Mariana y Maria realizaron un gran trabajo en mi casa, logré cambiar mi techo en el momento donde no tenía la disponibilidad de dinero y además de eso no pagar más electricidad ya que tengo un sistema de paneles solares y ahora mis Bill son negativos, no pago a la compañía eléctrica.",
-    "video1":"",
-    "photo2":"/image/c2.PNG",
     "customer2":"Antonia Campos",
     "description2":"Monarca life improvement, fue el equipo encargado de realizar las remodelaciones que mi casa necesitaba como insolación, reparación de ventanas y la culminación de una de las paredes de la cocina, fue un proceso rápido y sencillo. También recibí bonificaciones que me ayudaron a mejorar situaciones en mi vida personal, este es mi primer año utilizando paneles solares y me ha ido muy bien. Además de eso me indicaron en cada etapa que necesitaba hacer y  me ayudaron a hacerlo.",
-    "video2":"",
-    "photo3":"/image/c3.PNG",
     "customer3":"Héctor Echeverría",
     "description3":"Trabajar con Monarca cumplió las expectativas que tenía sobre el proyecto que diseñaron para mi y mi familia. En el proyecto se hizo el cambio de mi techo cosa que dependía de mi aseguranza inmobiliaria y no respondieron, esta compañía me ayudó a lograr esto y también eliminar el bill eléctrico de mi propiedad. Ahora tengo 100$ en dólares en crédito y solo tengo 5 meses con mis paneles solares. ",
-    "video3":"",
-    "photo4":"/image/c4.PNG",
     "customer4":"Martha Echeverría",
     "description4":"Para las personas que no confían en los sistemas solares les recomiendo que solo elijan y un buen asesor, que sea profesional y que los acompañe en todo momento como lo hicieron estas chicas con nosotros.",
-    "video4":"",
-    "photo5":"/image/c5.PNG",
     "customer5":"Julieta de sosa",
-    "description5":"Son una compañía que no ha dejado de responder mis inquietudes y preguntas en cada momento y durante el proceso en el cual se realizó el proyecto de energía renovable para una de mis propiedades. Tienen mucha paciencia y dedicación en lo que hacen. ",
-    "video5":""
+    "description5":"Son una compañía que no ha dejado de responder mis inquietudes y preguntas en cada momento y durante el proceso en el cual se realizó el proyecto de energía renovable para una de mis propiedades. Tienen mucha paciencia y dedicación en lo que hacen. "
   },
   "Allies":{
     "title":"Nuestros Aliados"
