@@ -133,7 +133,7 @@ const CarruselHero = () => {
 					</motion.div>
 				</div>
 			</div>
-			<div >
+			{/* <div >
 				<a
 					href="#servcies"
 					aria-label="Scroll down"
@@ -149,7 +149,7 @@ const CarruselHero = () => {
 						<path d="M10.293,3.293,6,7.586,1.707,3.293A1,1,0,0,0,.293,4.707l5,5a1,1,0,0,0,1.414,0l5-5a1,1,0,1,0-1.414-1.414Z" />
 					</svg>
 				</a>
-			</div>
+			</div> */}
 		</div>
 	);
 }

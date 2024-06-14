@@ -26,13 +26,18 @@ const Contact = () => {
 						<div className="flex-col items-center py-14">
 							<div className="flex items-center mt-4">
 								<div>
-									<Image
-										src="/image/phone.png"
-										alt="Icono"
-										width={80}
-										height={80}
-									/>
+									<a
+										href={`https://wa.me/+1${formatNumber(telefono)}?text=aa`}
+									>
+										<Image
+											src="/image/phone.png"
+											alt="Icono"
+											width={80}
+											height={80}
+										/>
+									</a>
 								</div>
+
 								<div className="flex flex-col px-4">
 									<h className="font-bold">{t("whatsApp")}</h>
 									<a

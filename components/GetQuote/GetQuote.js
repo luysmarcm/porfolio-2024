@@ -30,8 +30,6 @@ const GetQuote = () => {
 			setIsModalOpen(true);
 		}
 	};
-	
-	console.log(isValid);
 	return (
 		<div>
 			<input

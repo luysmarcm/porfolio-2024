@@ -17,7 +17,6 @@ const NavBar = () => {
 	const localActive = useLocale();
 	const router = useRouter();
 	const { pathname } = router;
-	console.log(pathname);
 
 	const links = [
 		{ name: "links1", href: "href1", current: false },
