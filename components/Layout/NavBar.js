@@ -108,7 +108,7 @@ const NavBar = () => {
 							<Link
 								// href={`/${localActive}/${t("href5")}`}
 								href={t("href5")}
-								className="px-3 py-2 rounded-md text-md lg:text-lg text-white hover:text-secundary"
+								className="px-3 py-2 rounded-md text-2xl lg:text-lg text-white hover:text-secundary"
 							>
 								{t("links5")}
 							</Link>

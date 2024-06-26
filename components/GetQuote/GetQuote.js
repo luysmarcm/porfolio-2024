@@ -25,26 +25,58 @@ const GetQuote = () => {
 		if (codeZ.includes(codigoNumerico)) {
 			setisValid(true);
 			setIsModalOpen(true);
+			
 		} else {
 			setisValid(false);
 			setIsModalOpen(true);
 		}
 	};
 	return (
-		<div>
+		<div className="flex flex-col space-y-4">
+			<div className="text-left">
+				<h2 className="text-3xl lg:text-2xl font-extrabold">
+					{/* {t("title")} */}
+					Estoy interesado en:
+				</h2>
+			</div>
+			<p>Verifica tu codigo postal</p>
 			<input
-				className="border border-primary rounded-full"
+				className="border border-primary rounded-lg"
 				type="text"
 				placeholder={t1("text")}
 				value={postalCode}
 				onChange={handleInputChange}
 			/>
-			<button
-				className="rounded-full text-white font-bold bg-primary px-5 py-1 hover:bg-secundary"
-				onClick={handleCheckPostalCode}
-			>
-				{t1("buttonc")}
-			</button>
+			<div className="grid grid-cols-2 place-content-around gap-4">
+				<button
+					className="rounded-full text-white font-bold bg-primary  py-1 hover:bg-secundary"
+					onClick={handleCheckPostalCode}
+				>
+					Agendar inspección general
+					{/* {t1("buttonc")} */}
+				</button>
+				<button 
+					className="rounded-full text-white font-bold bg-primary py-1 hover:bg-secundary"
+					onClick={handleCheckPostalCode}
+				>
+					Chequeo de mi sistema de paneles actual
+					{/* {t1("buttonc")} */}
+				</button>
+				<button
+					className="rounded-full text-white font-bold bg-primary py-1 hover:bg-secundary"
+					onClick={handleCheckPostalCode}
+				>
+					Remodelación y mantenimiento
+					{/* {t1("buttonc")} */}
+				</button>
+				<button
+					className="rounded-full text-white font-bold bg-primary py-1 p-2 hover:bg-secundary"
+					onClick={handleCheckPostalCode}
+				>
+					Instalación de acondicionamiento de agua
+					{/* {t1("buttonc")} */}
+				</button>
+			</div>
 			<Modal
 				t1={t1}
 				t={t}

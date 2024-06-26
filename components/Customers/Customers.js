@@ -25,12 +25,11 @@ const Customers = () => {
 							<div className="mt-2 w-40 h-3 bg-secundary inline-block"></div>
 						</div>
 						<p className="text-black mb-4 py-4">{t("text")}</p>
-						<button
-							href="#services"
-							className="rounded-full font-light text-white bg-primary px-5 py-1 hover:bg-secundary"
-						>
+						<button className="rounded-full font-light text-white bg-primary px-5 py-1 hover:bg-secundary">
 							<div className="text-center inline-flex items-center relative">
-								<span className="px-1 font-bold">{t("buttons")}</span>
+								<a href="#services" className="px-1 font-bold">
+									{t("buttons")}
+								</a>
 							</div>
 						</button>
 					</div>

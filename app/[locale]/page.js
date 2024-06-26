@@ -1,6 +1,4 @@
-import AboutUs from "@/components/AboutUs/AboutUs";
 import Contact from "@/components/Contact/Contact";
-import HeroSection from "@/components/HeroSection/HeroSection";
 import WeSpecialize from "@/components/ServicesM/WeSpecialize";
 import Customers from "@/components/Customers/Customers";
 import OurAllies from "@/components/Allies/OurAllies";
@@ -9,16 +7,16 @@ import CarruselHero from "@/components/CarruselHero/CarruselHero";
 import GetQuote from "@/components/GetQuote/GetQuote";
 
 export default function Home() {
-
+	
 	return (
 		<main>
-			<CarruselHero/>
+			<CarruselHero />
 			<WeSpecialize />
-			<HowWill/>
+			<HowWill />
 			<Customers />
 			<Contact />
 			<OurAllies />
-			<GetQuote/>
+			{/* <GetQuote /> */}
 		</main>
 	);
 }	

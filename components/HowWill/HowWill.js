@@ -8,11 +8,11 @@ const HowWill = () => {
 	const items = [
 		{
 			text: "text1",
-			imagen: "/image/1.png",
+			imagen: "/image/22.jpg",
 		},
 		{
 			text: "text2",
-			imagen: "/image/2.png",
+			imagen: "/image/55.jpg",
 		},
 	];
   return (
@@ -68,40 +68,39 @@ const HowWill = () => {
 			))} */}
 			{items.map((item, index) => (
 				<div
-					data-aos={`${index % 2 === 0 ? "fade-right" : "fade-left"}`}
-
+					// data-aos={`${index % 2 === 0 ? "fade-right" : "fade-left"}`}
 					key={index}
 					className="flex flex-row pt-32 "
 				>
 					<div
-						className={`flex py-12 flex-col place-content-center bg-primary  ${
+						className={`flex py-12 flex-col items-center px-12 bg-primary ${
 							index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
 						}`}
 					>
 						<div
-							className={`flex flex-col lg:flex-1 p-24 lg:p-20 relative ${
-								index % 2 === 0 ? "lg:" : "lg:	"
+							className={`flex flex-col lg:flex-1 p-4 lg:p-24 relative ${
+								index % 2 === 0 ? "lg:-top-56" : "lg:-top-56"
 							}`}
 						>
-							<div className="w-2/3 h-2/3 absolute left-14  -top-36">
+							<div className="lg:w-1/2 lg:absolute">
 								<Image
 									src={item.imagen}
 									alt="About Us"
 									// layout="responsive"
 									width={913}
 									height={1288}
-									className="asolute"
+									className="rounded-lg"
 								/>
 							</div>
 						</div>
 						<div
-							className={`flex-1 px-4 lg:p-4 lg:py-12  bg-fondo rounded-[50px] ${
-								index % 2 === 0 ? "-translate-x-10" : "translate-x-10"
+							className={`lg:w-1/2 flex-1 p-10 lg:p-4 lg:py-3  bg-fondo rounded-[50px] ${
+								index % 2 === 0 ? "" : ""
 							}`}
 						>
 							<p
 								// dangerouslySetInnerHTML={{ __html: t(item.text) }}
-								className="text-lg lg:text-xl text-justify lg:text-justify p-12"
+								className="text-lg lg:text-xl text-justify lg:text-justify lg:p-12"
 							>
 								{t(item.text)}
 							</p>

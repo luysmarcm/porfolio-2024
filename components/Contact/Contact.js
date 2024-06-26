@@ -4,6 +4,7 @@ import HeadingPage from "../HeadingPage/HeadingPage";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import FormContact from "../Form/FormContact";
+import GetQuote from "../GetQuote/GetQuote";
 
 const telefono = "13213306424";
 
@@ -19,16 +20,13 @@ const Contact = () => {
 			<HeadingPage text={t("title")} le="text-2xl" />
 			<div className=" mx-auto my-8 p-5 lg:px-28">
 				<div className="flex flex-col lg:flex-row justify-center items-center px-0 place-content-between">
-					<div data-aos="fade-right" className="w-full lg:w-1/2">
-						<FormContact t={t} />
-					</div>
+					<GetQuote />
+					
 					<div data-aos="fade-left" className="w-full lg:w-1/2 lg:pl-8">
 						<div className="flex-col items-center py-14">
 							<div className="flex items-center mt-4">
 								<div>
-									<a
-										href={`https://wa.me/+1${formatNumber(telefono)}?text=aa`}
-									>
+									<a href={`https://wa.me/+1${formatNumber(telefono)}?text=aa`}>
 										<Image
 											src="/image/phone.png"
 											alt="Icono"
