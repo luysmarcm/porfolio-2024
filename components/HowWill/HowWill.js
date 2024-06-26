@@ -8,11 +8,11 @@ const HowWill = () => {
 	const items = [
 		{
 			text: "text1",
-			imagen: "/image/22.jpg",
+			imagen: "/image/22.JPG",
 		},
 		{
 			text: "text2",
-			imagen: "/image/55.jpg",
+			imagen: "/image/55.JPG",
 		},
 	];
   return (
