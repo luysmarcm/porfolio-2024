@@ -1,11 +1,15 @@
+"use client";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import React from "react";
-
+import { useLocale } from "next-intl";
 const telefono = "13213306424";
 
 const Footer = () => {
+	const localActive = useLocale();
+	const router = useRouter();
 	const formatNumber = (number) => {
 		const format = number.slice(1);
 		return format.replace("-", "").replace(" ", "");
@@ -29,7 +33,9 @@ const Footer = () => {
 					</h2>
 					<p className="text-primary text-xl text-start">{t("text")}</p>
 					<button className="rounded-full font-light text-white bg-primary px-5 py-1 hover:bg-secundary">
-						<span className="px-1 font-bold">{t("buttonc")}</span>
+						<span className="px-1 font-bold">
+							<a href={`/${localActive}/#contact`}>{t("buttonc")}</a>
+						</span>
 					</button>
 				</div>
 
@@ -113,7 +119,7 @@ const Footer = () => {
 									</svg>
 
 									<span className="px-4 text-start">
-										9900 Westpark Dr Houston, TX 77063
+										5821 Southwest Fwy Houston, TX 77057 United States
 									</span>
 								</a>
 							</div>

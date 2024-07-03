@@ -6,8 +6,6 @@ import { useTranslations } from "next-intl";
 import { useRouter } from 'next/navigation'
 // import { locales } from "@/navigation";
 import { useLocale } from "next-intl";
-import LocalSwitcher from "../Local-switcher";
-
 
 
 const NavBar = () => {

@@ -16,18 +16,17 @@ const AboutUs = ({t}) => {
 	];
 
   return (
-		<section	
-			className="p-4 lg:p-0 lg:py-10"
-		>
+		<section className="p-4 lg:p-0 lg:py-10">
 			<div className="flex items-center flex-col justify-center w-full lg:flex-row lg:justify-around gap-y-10">
-				<div className="max-w-sm lg:max-w-xl lg:w-1/2 lg:justify-center">
+				<div className="max-w-sm lg:max-w-xl lg:w-1/2 lg:justify-center ">
 					<div className="lg:relative lg:z-20">
 						<Image
-							src="/image/aboutUs.png"
+							src="/image/a1.png"
 							alt="About Us"
 							// layout="responsive"
 							width={913}
 							height={1288}
+							className="rounded-lg"
 						/>
 					</div>
 				</div>

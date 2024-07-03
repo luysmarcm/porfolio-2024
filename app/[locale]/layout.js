@@ -6,6 +6,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { AOSInit } from "@/aos"
 import Script from "next/script";
+import Head from "next/head";
 
 const montse = Montserrat({ subsets: ["latin"] });
 
@@ -13,7 +14,7 @@ export const metadata = {
 	title: "Monarca | Life Improvement",
 	description:
 		"Your reliable partner to improve your property! We offer customized and effective solutions for projects of any size, guaranteeing results that exceed your expectations.",
-	image: "/image/logoM.png",
+	icon: "/image/logoM.png",
 };
 
 export default async function LocaleLayout({ children, params }) {
@@ -23,6 +24,9 @@ export default async function LocaleLayout({ children, params }) {
 
 	return (
 		<html lang={params.locale}>
+			<Head>
+				<link rel="icon" href="/image/logoM.png" />
+			</Head>
 			<AOSInit />
 			<Script
 				async
@@ -40,7 +44,7 @@ export default async function LocaleLayout({ children, params }) {
 				`,
 				}}
 			/>
-			<body>
+			<body className="max-w-max min-w-min mx-auto">
 				<NextIntlClientProvider messages={messages}>
 					<Header />
 					<div className="max-w-max m-auto overflow-hidden w-full">

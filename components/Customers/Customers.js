@@ -1,10 +1,7 @@
 "use client"
-import React, { useState } from 'react'
-import VideoComponent from '../Video/VideoComponent';
 import { useTranslations } from "next-intl";
 import Stories from './Stories';
-import Image from 'next/image';
-import Videos from '../Video/Videos';
+
 
 const Customers = () => {
 

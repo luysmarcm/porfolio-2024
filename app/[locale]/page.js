@@ -4,7 +4,6 @@ import Customers from "@/components/Customers/Customers";
 import OurAllies from "@/components/Allies/OurAllies";
 import HowWill from "@/components/HowWill/HowWill";
 import CarruselHero from "@/components/CarruselHero/CarruselHero";
-import GetQuote from "@/components/GetQuote/GetQuote";
 
 export default function Home() {
 	
@@ -16,7 +15,6 @@ export default function Home() {
 			<Customers />
 			<Contact />
 			<OurAllies />
-			{/* <GetQuote /> */}
 		</main>
 	);
 }	

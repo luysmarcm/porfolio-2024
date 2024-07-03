@@ -76,21 +76,6 @@ const WeSpecialize = () => {
 				</div>
 			</div>
 		</div>
-		// <section id="services">
-		// 	<div className="flex flex-col items-center py-14 w-full h-full ">
-		// 		<div className="text-center py-6">
-		// 			<h2 className="text-3xl lg:text-5xl font-extrabold text-primary">
-		// 				{t("title")}
-		// 			</h2>
-		// 			<div className="mt-2 w-40 h-3 bg-secundary inline-block"></div>
-		// 		</div>
-		// 		<div className="py-24 auto-cols-max grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 lg:gap-10 lg:gap-y-8  place-content-between  ">
-		// 			{items.map((item, index) => (
-		// 				<CardSpecialize key={index} item={item} t={t} />
-		// 			))}
-		// 		</div>
-		// 	</div>
-		// </section>
 	);
 };
 
