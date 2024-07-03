@@ -8,11 +8,11 @@ const HowWill = () => {
 	const items = [
 		{
 			text: "text1",
-			imagen: "/image/22.JPG",
+			imagen: "/image/h1.png",
 		},
 		{
 			text: "text2",
-			imagen: "/image/55.JPG",
+			imagen: "/image/h2.png",
 		},
 	];
   return (
@@ -70,11 +70,11 @@ const HowWill = () => {
 				<div
 					// data-aos={`${index % 2 === 0 ? "fade-right" : "fade-left"}`}
 					key={index}
-					className="flex flex-row pt-32 "
+					className="flex flex-row pt-36 "
 				>
 					<div
-						className={`flex py-12 flex-col items-center px-12 bg-primary ${
-							index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+						className={`flex py-12 flex-col lg:flex-row items-center px-12 bg-primary ${
+							index % 2 === 0 ? "lg:order-first" : "lg:flex-row-reverse"
 						}`}
 					>
 						<div

@@ -6,11 +6,11 @@ import Videos from '../Video/Videos';
 const CardCustomers = ({ t, item, index }) => {
 	return (
 		<div
-			data-aos={`${index % 2 === 0 ? "fade-right" : "fade-left"}`}
-			className="flex flex-col space-y-4 pt-5 lg:flex-row items-center px-4 lg:p-14"
+			// data-aos={`${index % 2 === 0 ? "fade-right" : "fade-left"}`}
+			className="flex space-y-4 pt-5 lg:flex-row items-center px-4 lg:p-14 "
 		>
 			<card
-				className={`bg-fondo rounded-xl shadow-md w-full lg:w-1/2  ${
+				className={`bg-fondo rounded-xl shadow-md max-w-sm  ${
 					index % 2 === 0 ? "lg:order-first" : "lg:order-last"
 				}`}
 			>
@@ -96,9 +96,11 @@ const CardCustomers = ({ t, item, index }) => {
 					</div>
 				</div>
 			</card>
-			<div className="w-full lg:w-1/2">
-				<Videos key={index} t={t} item={item} />
-			</div>
+
+			<video className="max-w-sm rounded-lg" controls>
+				<source src={item.video} type="video/mp4" />
+				Tu navegador no soporta la etiqueta de video.
+			</video>
 		</div>
 	); 	
 };

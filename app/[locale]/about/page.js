@@ -8,7 +8,7 @@ const About = () => {
   const t = useTranslations("AboutUs");
   return (
 		<section className=" lg:p-0 lg:py-12">
-			<HeadingPage text={t("heading")} le="text-5xl" />
+			<HeadingPage text={t("heading")} le="text-5xl" le1="text-3xl"/>
 			<AboutUs t={t} />
 			<WhyChoose t={t} />
 		</section>

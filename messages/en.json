@@ -75,16 +75,16 @@
     "paRes6": "Installation",
     "paRes66":"your entire property",
 
-    "messageW1":"",
-    "messageW2":"",
-    "messageW3":"",
-    "messageW4":"",
-    "messageW5":"",
-    "messageW6":""
+    "messageW1":"Hello, I would like information about: $40,000 grant",
+    "messageW2":"Hello, I want information, about: Inspections",
+    "messageW3":"Hello, I want information about: Solar panels",
+    "messageW4":"Hello, I want information about: Energy projects",
+    "messageW5":"Hello, I want information about: Remodeling",
+    "messageW6":"Hello, I want information about: Installation of water conditioners"
   },
   "Contact":{
     "title":"We are ready to provide you with the best advice for your business or home.",
-    "subTitle":"",
+    "subTitle":"Complete your information below to continue.",
     "name":"First and last name",
     "email":"Email",
     "phone":"Phone Number",
@@ -123,8 +123,13 @@
     "text1":"Encuentranos",
     "buttonc":"Get Started",
     "alert":"We’re sorry, is not currently in an area we support.",
-    "subTitle":"",
-    "buttonClo":"Cerrar"
+    "subTitle":"I'm interested in:",
+    "codeV":"Check your zip code",
+    "buttonClo":"Close",
+    "buttonA":"Schedule general inspection",
+    "buttonCh":"Checking my current panel system",
+    "buttonR":"Remodeling and maintenance",
+    "buttonI":"Installation of water conditioning systems"
   },
   "Footer":{
     "title":"Do you want more information?",

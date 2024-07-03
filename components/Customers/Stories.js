@@ -1,8 +1,9 @@
 import React from 'react'
 import HeadingPage from '../HeadingPage/HeadingPage'
 import CardCustomers from '../Card/CardCustomers';
+import CardTesttmonio from '../Card/CardTesttmonio';
 
-const Stories = ({t}) => {
+const Stories = ({ t}) => {
 	const items = [
 		{
 			photo: "/image/c1.png",
@@ -33,18 +34,22 @@ const Stories = ({t}) => {
 			photo: "/image/c5.png",
 			descripcion: "description5",
 			customer: "customer5",
-			video: "/videos/V6.mp4",
+			video: "/videos/V5.mp4",
 		},
 	];
 
 	return (
 		<section>
-			<HeadingPage text={t("titleS")} le="text-5xl" />
-			{items.map((item, index) => (
+			<HeadingPage text={t("titleS")} le="text-5xl" le1="text-3xl" />
+			{/* {items.map((item, index) => (
 				<CardCustomers key={index} t={t} item={item} index={index} />
-			))}
+			))} */}
+			
+				{items.map((item, index) => (
+					<CardTesttmonio key={index} t={t} item={item} index={index} />
+				))}
 		</section>
 	);
-}
+};
 
 export default Stories

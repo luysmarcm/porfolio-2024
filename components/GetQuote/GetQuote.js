@@ -5,11 +5,31 @@ import { useTranslations } from "next-intl";
 
 const GetQuote = () => {
 
+	const buttons = [
+		{
+			button: "buttonA",
+		},
+		{
+			button: "buttonCh",
+		},
+		{
+			button: "buttonR",
+		},
+		{
+			button: "buttonI",
+		},
+	];
+
 	const t1 = useTranslations("GetQuote");
 	const t = useTranslations("Contact")
 	const codeZ = [
-		75201, 75202, 75203, 75204, 33601, 33602, 33603, 33604, 32801, 32802, 32803,
-		32804, 77001, 77002, 77003, 77004,
+		77008, 75201, 75202, 75203, 75204, 33601, 33602, 33603, 33604, 32801, 32802,
+		32803, 32804, 77001, 77002, 77003, 77004, 76951, 75015, 76597, 73301, 78830,
+		73344, 76676, 75599, 75016, 75053, 75047, 75049, 75046, 75380, 75942, 75934,
+		77976, 77855, 78670, 79053, 78591, 88595, 73960, 77878, 77663, 75132, 79534,
+		76880, 75017, 79105, 79942, 76573, 75026, 77838, 75880, 75085, 75029, 77463,
+		75014, 75011, 77404, 75507, 77836, 79226, 79852, 78102, 76442, 78624, 76240,
+		76528, 77963
 	];
 	const [postalCode, setPostalCode] = useState("");
 	const [isValid, setisValid] = useState(false)
@@ -32,14 +52,13 @@ const GetQuote = () => {
 		}
 	};
 	return (
-		<div className="flex flex-col space-y-4">
+		<div  className="flex flex-col space-y-4">
 			<div className="text-left">
 				<h2 className="text-3xl lg:text-2xl font-extrabold">
-					{/* {t("title")} */}
-					Estoy interesado en:
+					{t1("subTitle")}
 				</h2>
 			</div>
-			<p>Verifica tu codigo postal</p>
+			<p>{t1("codeV")}</p>
 			<input
 				className="border border-primary rounded-lg"
 				type="text"
@@ -48,34 +67,34 @@ const GetQuote = () => {
 				onChange={handleInputChange}
 			/>
 			<div className="grid grid-cols-2 place-content-around gap-4">
-				<button
-					className="rounded-full text-white font-bold bg-primary  py-1 hover:bg-secundary"
+				{buttons.map((button, index) => (
+					<button
+						key={index}
+						className="rounded-full text-white font-bold bg-primary  py-1 p-2 hover:bg-secundary"
+						onClick={handleCheckPostalCode}
+					>
+						{t1(button.button)}
+					</button>
+				))}
+
+				{/* <button
+					className="rounded-full text-white font-bold bg-primary py-1 p-2 hover:bg-secundary"
 					onClick={handleCheckPostalCode}
 				>
-					Agendar inspección general
-					{/* {t1("buttonc")} */}
-				</button>
-				<button 
-					className="rounded-full text-white font-bold bg-primary py-1 hover:bg-secundary"
-					onClick={handleCheckPostalCode}
-				>
-					Chequeo de mi sistema de paneles actual
-					{/* {t1("buttonc")} */}
-				</button>
-				<button
-					className="rounded-full text-white font-bold bg-primary py-1 hover:bg-secundary"
-					onClick={handleCheckPostalCode}
-				>
-					Remodelación y mantenimiento
-					{/* {t1("buttonc")} */}
+					{t1("buttonCh")}
 				</button>
 				<button
 					className="rounded-full text-white font-bold bg-primary py-1 p-2 hover:bg-secundary"
 					onClick={handleCheckPostalCode}
 				>
-					Instalación de acondicionamiento de agua
-					{/* {t1("buttonc")} */}
+					{t1("buttonR")}
 				</button>
+				<button
+					className="rounded-full text-white font-bold bg-primary py-1 p-2 hover:bg-secundary"
+					onClick={handleCheckPostalCode}
+				>
+					{t1("buttonI")}
+				</button> */}
 			</div>
 			<Modal
 				t1={t1}

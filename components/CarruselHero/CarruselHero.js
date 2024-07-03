@@ -65,7 +65,7 @@ const CarruselHero = () => {
 		// 		</div> */}
 		// 	</Slider>
 		// </div>
-		<div className="relative h-screen">
+		<div className="relative h-screen bg-banner bg-cover">
 			<video
 				autoPlay
 				loop
@@ -101,7 +101,9 @@ const CarruselHero = () => {
 								className="rounded-full font-light text-white bg-primary px-5 py-1 hover:bg-secundary"
 							>
 								<div className="text-center inline-flex items-center relative">
-									<span className="px-1 font-bold">{t("buttonc")}</span>
+									<a href="#contact" className="px-1 font-bold">
+										{t("buttonc")}
+									</a>
 								</div>
 							</motion.button>
 							<motion.button
@@ -112,7 +114,9 @@ const CarruselHero = () => {
 								className="rounded-full font-light text-white bg-primary px-5 py-1 hover:bg-secundary"
 							>
 								<div className="text-center inline-flex items-center relative">
-									<span className="px-1 font-bold">{t("buttons")}</span>
+									<a href="#services" className="px-1 font-bold">
+										{t("buttons")}
+									</a>
 								</div>
 							</motion.button>
 						</div>

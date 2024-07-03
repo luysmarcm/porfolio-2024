@@ -1,9 +1,5 @@
 import Image from 'next/image';
-import React from 'react'
-import { useTranslations } from 'next-intl';
 import CardMiVi from '../Card/CardMiVi';
-
-
 
 const AboutUs = ({t}) => {
 	const items = [

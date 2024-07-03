@@ -3,7 +3,7 @@ import React from 'react'
 
 const CardItem = ({item, t}) => {
   return (
-		<div className="flex flex-col place-content-center items-center text-center">
+		<div className="flex flex-col  items-center text-center">
 			<div className="w-16 h-16 bg-white rounded-lg mb-2">
 				<Image
 					src={item.image}

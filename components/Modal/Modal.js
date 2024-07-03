@@ -9,17 +9,20 @@ const Modal = ({ isOpen, onClose, isValid, t, t1 }) => {
 		<div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-40">
 			{isValid === true ? (
 				<div className="bg-white rounded-lg shadow-lg w-[400px] lg:w-[500px] overflow-y-auto max-h-[85vh]">
-					<div className="bg-primary h-44 lg:h-36	">
-						<h2 className="text-white text-xl lg:text-xl font-bold text-center p-6">
+					<div className="bg-primary h-44 lg:h-44	text-center p-5">
+						<h2 className="text-white text-xl lg:text-xl font-bold text-center p-5">
 							{t("title")}
 						</h2>
+						<h className="text-white text-base lg:text-base text-center">
+							{t("subTitle")}
+						</h>
 					</div>
 					<FormContact t={t} />
 					<button
 						onClick={onClose}
-						className="rounded-full font-light text-white bg-primary px-5 py-1 hover:bg-secundary"
+						className="rounded-full font-light text-white text-center bg-primary px-5 py-1 hover:bg-secundary"
 					>
-						Cerrar
+						{t1("buttonClo")}
 					</button>
 				</div>
 			) : (

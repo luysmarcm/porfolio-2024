@@ -71,7 +71,7 @@ const NavBar = () => {
 							className="rounded-full font-bold text-primary bg-m lg:px-5 lg:py-1 hover:bg-secundary"
 							type="submit"
 						>
-							<a href="#contact">{t("buttonCont")}</a>
+							<a href={`/${localActive}/#contact`}>{t("buttonCont")}</a>
 						</button>
 					</ul>
 
@@ -98,7 +98,7 @@ const NavBar = () => {
 							{links.map((item) => (
 								<li key={t(item.name)}>
 									<a
-										href={t(item.href)}
+										href={`/${localActive}/${t(item.href)}`}
 										className="px-3 py-2 rounded-md text-2xl lg:text-lg text-white hover:text-secundary"
 									>
 										{t(item.name)}
@@ -117,7 +117,7 @@ const NavBar = () => {
 								className="rounded-full font-semibold  text-primary bg-m px-5 py-1 hover:bg-secundary"
 								type="submit"
 							>
-								{t("buttonCont")}
+								<a href={`/${localActive}/#contact`}>{t("buttonCont")}</a>
 							</button>
 						</ul>
 					</div>

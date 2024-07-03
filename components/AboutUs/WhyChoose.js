@@ -1,15 +1,7 @@
-import React from "react";
-import CardItem from "../Card/CardItem";
 import Image from "next/image";
+import CardItem from "../Card/CardItem";
 
-const cardContainerClasses =
-	"flex flex-col md:flex-row bg-white dark:bg-zinc-800 p-4 rounded-lg";
-const gridClasses = "";
-const cardContentClasses = "";
-const imageClasses = "";
-
-const WhyChoose = ({t}) => {
-
+const WhyChoose = ({ t }) => {
 	const items = [
 		{
 			title: "title1",
@@ -42,7 +34,7 @@ const WhyChoose = ({t}) => {
 			</div>
 			<div className="flex flex-col md:flex-row space-y-4">
 				<div className="w-full bg-primary rounded-md lg:rounded-r-[100px] lg:w-3/4">
-					<div className="grid grip-col-1 place-content-between  lg:grid-cols-2 gap-4 p-4 lg:p-20 lg:px-36 lg:-translate-x-14">
+					<div className="grid grip-col-1 place-content-around  lg:grid-cols-2 gap-10 p-10 lg:p-20 lg:px-36 lg:-translate-x-14">
 						{items.map((item, index) => (
 							<CardItem key={index} item={item} t={t} />
 						))}
@@ -67,6 +59,5 @@ const WhyChoose = ({t}) => {
 		</section>
 	);
 };
-
 
 export default WhyChoose;
