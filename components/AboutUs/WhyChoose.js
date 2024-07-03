@@ -47,7 +47,7 @@ const WhyChoose = ({ t }) => {
 					className="rounded-lg shadow-lg"
 				/> */}
 					<Image
-						src="/image/a2.jpg"
+						src="/image/a2.png"
 						alt="About Us"
 						// layout="responsive"
 						width={300}
