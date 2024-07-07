@@ -94,7 +94,9 @@
     "phoneE":"Phone",
     "emailE":"Email",
     "address":"Address",
-    "message":"Form submitted successfully"
+    "message":"Form submitted successfully",
+    "services":"Service",
+    "error":"Please complete all fields before submitting the form."
   },
   "Customers":{
     "title":"What do our customers say?",
@@ -129,7 +131,9 @@
     "buttonA":"Schedule general inspection",
     "buttonCh":"Checking my current panel system",
     "buttonR":"Remodeling and maintenance",
-    "buttonI":"Installation of water conditioning systems"
+    "buttonI":"Installation of water conditioning systems",
+    "message":"¡Formulario enviado con éxito!",
+    "error":"The zip code is blank. Please enter a valid value."
   },
   "Footer":{
     "title":"Do you want more information?",

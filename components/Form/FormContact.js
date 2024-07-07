@@ -1,10 +1,11 @@
 "use client";
 import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
-import Toast from "../Toast";
+import Toastify from "toastify-js";
 
-const FormContact = ({ t }) => {
-    const [showToast, setShowToast] = useState(false);
+const FormContact = ({ t, servicioSele, postalCode }) => {
+	const textoNotificacion = t("message");
+	const error = t("error");
 	// funciona ojo
 	const [formData, setFormData] = useState({
 		nombre: "",
@@ -12,7 +13,8 @@ const FormContact = ({ t }) => {
 		email: "",
 		estado: "",
 		ciudad: "",
-		codigoPostal: "",
+		codigoPostal: postalCode,
+		servicio: servicioSele,
 	});
 
 	const handleChange = (e) => {
@@ -21,34 +23,97 @@ const FormContact = ({ t }) => {
 	};
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		emailjs
-			.sendForm(
-				"lifeimprovement",
-				"template_87c1vdx",
-				e.target,
-				"7bIc42U8JY4eMLcX8"
-			)
-			.then(
-				(result) => {
-					console.log("Email successfully sent!", result.text);
+		// Obtén los valores de los campos del formulario
+		const { nombre, telefono, email, estado, ciudad, codigoPostal, servicio } =
+			formData;
+		// Verifica si todos los campos están llenos
+		if (
+			nombre &&
+			telefono &&
+			email &&
+			estado &&
+			ciudad &&
+			codigoPostal &&
+			servicio
+		) {
+			// Si todos los campos están llenos, envía el formulario
+			emailjs
+				.sendForm(
+					"lifeimprovement",
+					"template_87c1vdx",
+					e.target,
+					"7bIc42U8JY4eMLcX8"
+				)
+				.then(
+					(result) => {
+						Toastify({
+							text: textoNotificacion,
+							duration: 3000,
+							style: {
+								background: "green",
+								borderRadius: "0.5rem",
+								textAlign: "center",
+							},
+							close: true,
+							gravity: "bottom",
+							position: "center",
+						}).showToast();
+						// console.log("Email enviado exitosamente:", result.text);
+					},
+					(error) => {
+						// console.log("Error al enviar el email:", error.text);
+					}
+				);
+
+			// Reinicia los valores del formulario
+			setFormData({
+				nombre: "",
+				telefono: "",
+				email: "",
+				estado: "",
+				ciudad: "",
+				codigoPostal: "",
+				servicio: "",
+			});
+		} else {
+			Toastify({
+				text: error,
+				duration: 3000,
+				style: {
+					background: "red",
+					borderRadius: "0.5rem",
+					textAlign: "center",
 				},
-				(error) => {
-					console.log("Failed to send email:", error.text);
-				}
-			);
-		setFormData({
-			nombre: "",
-			telefono: "",
-			email: "",
-			estado: "",
-			ciudad: "",
-			codigoPostal: "",
-		});
-		setShowToast(true);
+				close: true,
+				gravity: "bottom",
+				position: "center",
+			}).showToast();
+			// console.log(
+			// 	"Por favor, completa todos los campos antes de enviar el formulario."
+			// );
+		}
 	};
 	return (
 		<form onSubmit={handleSubmit} className="w-full max-w-lg pt-4 px-4">
 			<div className="flex flex-wrap -mx-3 mb-6 ">
+				<div className="w-full px-3">
+					<label
+						className="block tracking-wide text-gray-700 text-xs lg:text-xl font-bold mb-2"
+						htmlFor="nombre"
+					>
+						{t("services")}
+					</label>
+					<input
+						readOnly
+						className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded-full  mb-3  px-5 py-1 leading-tight focus:outline-none focus:bg-white"
+						id="servicio"
+						type="text"
+						placeholder="Juan Pérez"
+						name="servicio"
+						value={formData.servicio}
+						onChange={handleChange}
+					/>
+				</div>
 				<div className="w-full px-3">
 					<label
 						className="block tracking-wide text-gray-700 text-xs lg:text-xl font-bold mb-2"
@@ -162,7 +227,6 @@ const FormContact = ({ t }) => {
 						{t("buttonE")}
 					</button>
 				</div>
-				{showToast && <Toast message="¡Formulario enviado con éxito!" />}
 			</div>
 		</form>
 	);

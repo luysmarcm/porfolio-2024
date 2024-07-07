@@ -2,9 +2,9 @@
 import { useState } from "react";
 import Modal from "../Modal/Modal";
 import { useTranslations } from "next-intl";
+import Toastify from "toastify-js";
 
 const GetQuote = () => {
-
 	const buttons = [
 		{
 			button: "buttonA",
@@ -19,9 +19,10 @@ const GetQuote = () => {
 			button: "buttonI",
 		},
 	];
-
 	const t1 = useTranslations("GetQuote");
 	const t = useTranslations("Contact")
+	const textoNotificacion = t1("message");
+	const error = t1("error");
 	// const codeZ = [
 	// 	77008, 75201, 75202, 75203, 75204, 33601, 33602, 33603, 33604, 32801, 32802,
 	// 	32803, 32804, 77001, 77002, 77003, 77004, 76951, 75015, 76597, 73301, 78830,
@@ -34,25 +35,48 @@ const GetQuote = () => {
 	const [postalCode, setPostalCode] = useState("");
 	const [isValid, setisValid] = useState(false)
 	const [isModalOpen, setIsModalOpen] = useState(false);
+	const [servicioSele, setServicioSele] = useState("")
 
 	const handleInputChange = (e) => {
 		setPostalCode(e.target.value);
 	};
+	
+	const handleCheckPostalCode = (services) => {
+		setServicioSele(services);
 
-	const handleCheckPostalCode = () => {
+		// Verifica si el valor de postalCode no está en blanco
+		if (!postalCode) {
+			Toastify({
+				text: error,
+				duration: 3000,
+				style: {
+					background: "red",
+					borderRadius: "0.5rem",
+					textAlign: "center",
+				},
+				close: true,
+				gravity: "bottom",
+				position: "center",
+			}).showToast();
+			console.log(
+				"El código postal está en blanco. Por favor, ingresa un valor válido."
+			);
+			return; // Detén la ejecución si el código postal está en blanco
+		}
 
 		const isValidPostalCode = postalCode >= 73301 && postalCode <= 88595;
 		// const codigoNumerico = parseInt(postalCode, 10);
-		if ((isValidPostalCode)) {
+		if (isValidPostalCode) {
 			setisValid(true);
 			setIsModalOpen(true);
+			// setPostalCode("");
 		} else {
 			setisValid(false);
 			setIsModalOpen(true);
 		}
 	};
 	return (
-		<div  className="flex flex-col space-y-4">
+		<div className="flex flex-col space-y-4">
 			<div className="text-left">
 				<h2 className="text-3xl lg:text-2xl font-extrabold">
 					{t1("subTitle")}
@@ -66,12 +90,12 @@ const GetQuote = () => {
 				value={postalCode}
 				onChange={handleInputChange}
 			/>
-			<div className="grid grid-cols-2 place-content-around gap-4">
+			<div className="grid grid-cols-1 lg:grid-cols-2 place-content-around gap-4">
 				{buttons.map((button, index) => (
 					<button
 						key={index}
 						className="rounded-full text-white font-bold bg-primary  py-3 p-3 hover:bg-secundary"
-						onClick={handleCheckPostalCode}
+						onClick={() => handleCheckPostalCode(t1(button.button))}
 					>
 						{t1(button.button)}
 					</button>
@@ -83,6 +107,8 @@ const GetQuote = () => {
 				isValid={isValid}
 				isOpen={isModalOpen}
 				onClose={() => setIsModalOpen(false)}
+				servicioSele={servicioSele}
+				postalCode={postalCode}
 			/>
 		</div>
 	);

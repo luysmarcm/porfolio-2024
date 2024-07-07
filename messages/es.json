@@ -95,7 +95,9 @@
     "phoneE":"Telefono",
     "emailE":"Correo",
     "address":"Direccion",
-    "message":"¡Formulario enviado con éxito!"
+    "message":"¡Formulario enviado con éxito!",
+    "services":"Servicio",
+    "error":"Por favor, completa todos los campos antes de enviar el formulario."
   },
   "Customers":{
     "title":"¿Qué dicen nuestros clientes?",
@@ -130,7 +132,9 @@
     "buttonA":"Agendar inspección general",
     "buttonCh":"Chequeo de mi sistema de paneles actual",
     "buttonR":"Remodelación y mantenimiento",
-    "buttonI":"Instalación de acondicionamiento de agua"
+    "buttonI":"Instalación de acondicionamiento de agua",
+    "message":"¡Formulario enviado con éxito!",
+    "error":"El código postal está en blanco. Por favor, ingresa un valor válido."
   },
   "Footer":{
     "title":"¿Quieres más información?",

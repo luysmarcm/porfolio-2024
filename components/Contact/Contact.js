@@ -77,6 +77,7 @@ const Contact = () => {
 						<a
 							href={`https://wa.me/+1${formatNumber(telefono)}`}
 							target="_blank"
+							aria-label="WhatsApp"
 							className="fixed bottom-7 right-7 bg-green-500 text-white p-3 rounded-full shadow-md hover:bg-green-600 transition duration-300"
 						>
 							<svg

@@ -27,7 +27,7 @@ const HowWill = () => {
 				<div
 					data-aos={`${index % 2 === 0 ? "fade-right" : "fade-left"}`}
 					key={index}
-					className="flex flex-row pt-52 max"
+					className="flex flex-row lg:pt-52 max"
 				>
 					<div
 						className={`flex py-8 flex-col lg:flex-row items-center px-12 bg-primary ${

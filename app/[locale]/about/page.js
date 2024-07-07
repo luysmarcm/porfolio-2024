@@ -1,7 +1,6 @@
 import AboutUs from '@/components/AboutUs/AboutUs';
 import WhyChoose from '@/components/AboutUs/WhyChoose';
 import HeadingPage from '@/components/HeadingPage/HeadingPage';
-import SeoComponent from '@/components/SeoComponent';
 import { useTranslations } from 'next-intl';
 import React from 'react'
 

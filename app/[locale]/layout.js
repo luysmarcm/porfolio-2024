@@ -1,5 +1,6 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import 'toastify-js/src/toastify.css';
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer.";
 import { NextIntlClientProvider } from "next-intl";
@@ -14,7 +15,7 @@ export const metadata = {
 	title: "Monarca | Life Improvement",
 	description:
 		"Your reliable partner to improve your property! We offer customized and effective solutions for projects of any size, guaranteeing results that exceed your expectations.",
-	icon: "/image/logoM.png",
+	// icon: "/image/logoM.png",
 };
 
 export default async function LocaleLayout({ children, params }) {
@@ -24,11 +25,8 @@ export default async function LocaleLayout({ children, params }) {
 
 	return (
 		<html lang={params.locale}>
-			<Head>
-				<link rel="icon" href="/image/logoM.png" />
-			</Head>
 			<AOSInit />
-			<Script
+			{/* <Script
 				async
 				src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GID}`}
 			/>
@@ -43,7 +41,7 @@ export default async function LocaleLayout({ children, params }) {
 				gtag('config', '${process.env.NEXT_PUBLIC_GID}', { page_path: window.location.pathname });
 				`,
 				}}
-			/>
+			/> */}
 			<body className="max-w-max min-w-min mx-auto">
 				<NextIntlClientProvider messages={messages}>
 					<Header />
