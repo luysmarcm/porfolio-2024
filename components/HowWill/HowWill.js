@@ -36,10 +36,10 @@ const HowWill = () => {
 					>
 						<div
 							className={`flex flex-col lg:flex-1 p-4 lg:p-24 relative ${
-								index % 2 === 0 ? "lg:-translate-y-56" : "lg:-translate-y-56"
+								index % 2 === 0 ? "lg:-translate-y-72" : "lg:-translate-y-72"
 							}`}
 						>
-							<div className="lg:w-1/2 lg:absolute">
+							<div className="lg:w-2/3 lg:absolute">
 								<Image
 									src={item.imagen}
 									alt="About Us"
