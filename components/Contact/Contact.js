@@ -1,5 +1,4 @@
 "use client";
-import HeadingPage from "../HeadingPage/HeadingPage";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import GetQuote from "../GetQuote/GetQuote";
@@ -15,7 +14,7 @@ const Contact = () => {
 
 	return (
 		<div id="contact">
-			<HeadingPage text={t("title")} le="text-2xl" le1="text-xl" />
+
 			<div className=" mx-auto my-8 p-5 lg:px-28">
 				<div className="flex flex-col lg:flex-row justify-center items-center px-0 place-content-between">
 					<GetQuote />

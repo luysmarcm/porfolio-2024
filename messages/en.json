@@ -2,44 +2,38 @@
   "NavBar":{
     "links1": "Home",
     "href1":"/",
-    "links2": "About Us",
+    "links2": "About",
     "href2":"about",
-    "links3":"Services",
-    "href3":"/#services",
-    "links4":"Metodologia",
-    "href4":"/#howWill",
+    "links3":"Work",
+    "href3":"works",
+    "links4":"Contact",
+    "href4":"contact",
     "links5":"Español",
-    "href5":"/es",
-  "buttonCont":"Contact"
+    "href5":"/es"
   },
   "Banner": {
-    "title": "Creating spaces, exceeding expectations.",
-    "parrafo1": "Your reliable partner to improve your property! We offer customized and effective solutions for projects of any size, guaranteeing results that exceed your expectations.",
-    "buttonc": "Contact",
-    "buttons": "Our Services"
+    "subTitle":"Hey, I'm Luysmar Colmenares",
+    "title": "Developer web",
+    "parrafo1": "Work remotely from South America.",
+    "buttonc": "DOWNLOAD CV",
+    "buttons": "VIEW MY WORK"
   },
-  "AboutUs":{
+  "About":{
     "heading":"¿Who are we?",
-    "title":"About Us",
-    "subTitle":"Why should you choose us?",
-    "text":"Since our founding in 2020, our mission at Monarca Life Improvement has been to make it easier for our clients to make improvements to their properties and boost their businesses, especially when they lack the necessary resources at the crucial moment. We are dedicated to offering effective and customized solutions, constantly looking for the best options to satisfy the needs of our clients and help them achieve their goals successfully.",
-    "mision":"Mission",
-    "textM":"Driving a sustainable future with renewable energy and high quality projects. We offer innovative solutions to reduce costs and environmental footprint, improving efficiency and comfort in homes and businesses. We want to lead the market and inspire a more sustainable lifestyle.",
-    "vision":"Vision",
-    "textV":"Leading in clean energy and sustainable construction, making these solutions accessible to all. We envision homes and businesses with solar energy and high-quality retrofits, without financial barriers, for a more sustainable and equitable future.",
-    "title1":"Personalized approach",
-    "text1":"We focus on the specific needs of each client, offering solutions tailored to their requirements, unlike companies that offer standard services.",
-    "title2":"Flexibility in services",
-    "text2":"We easily adapt to the changing needs of each client, with a wide variety of options and economic benefits.",
-    "title3":"Services free of charge",
-    "text3":"We offer general inspections and audits of solar systems at no cost, generating confidence and security between the client and the company.",
-    "title4":"Customer service",
-    "text4":"We offer a personalized and high quality service, providing close support and direct communication with each client"
+    "title":"About",
+    "hello":"Hi,There. I`m",
+    "subTitle":"I wonder if I've been changed in the night? Let me think. Was I the same when I got up this morning? ",
+    "text":"Programmer with over 6 years of experience in web application development, design, and implementation. Proficient in various platforms. Experienced in cutting-edge development tools and procedures. Strong collaboration skills within a productive team, quick learner, adaptable, and performs well under pressure.",
+    "title2":"Skills",
+    "text2":"",
+    "skill1":"Developer Web",
+    "skill2":"React.JS",
+    "skill3":"Web Desing",
+    "skill4":"Figma"
   },
-  "HowWeWork":{
-    "title":"How will we do it?",
-    "text1":"To begin, we will coordinate an appointment with you and your family to carry out a detailed diagnosis of the current situation you are facing. Then, we will propose the most suitable solution options for your specific needs.",
-    "text2":"Roof replacement, insolation, help you switch electrical suppliers at no cost. Our goal is to offer you customized alternatives that effectively respond to your requirements."
+ "Work":{
+    "title":"Works",
+    "text1":"Below is a list of selected projects I have done. If you have any questions or would like to chat about other things I've worked on."
   },
   "Services":{
     "title":"We specialize in",
@@ -98,43 +92,8 @@
     "services":"Service",
     "error":"Please complete all fields before submitting the form."
   },
-  "Customers":{
-    "title":"What do our customers say?",
-    "text":"Discover our clients' success stories and how we have transformed their properties with customized solutions.",
-    "buttons":"More",
-    "titleS":"Success Stories!",
-    "customer1":"Gustavo Cortes",
-    "description1":"Mariana and Maria did a great job on my house, I was able to change my roof at a time when I didn't have the money available and besides that I don't pay any more electricity since I have a solar panel system and now my bills are negative, I don't pay to the electric company.",
-    "customer2":"Antonia Campos",
-    "description2":"Monarca life improvement, was the team in charge of doing the remodeling that my house needed such as insolation, window repairs and the completion of one of the kitchen walls, it was a quick and easy process. I also received bonuses that helped me to improve situations in my personal life, this is my first year using solar panels and it has worked very well for me.Besides that they told me at each stage what I needed to do and helped me to do it.",
-    "customer3":"Héctor Echeverría",
-    "description3":"Working with Monarca fulfilled the expectations I had about the project they designed for me and my family. In the project I had to replace my roof which depended on my real estate insurance and they did not respond, this company helped me to achieve this and also eliminate the electric bill of my property. Now I have $100 in credit and only have 5 months with my solar panels.",
-    "customer4":"Martha Echeverría",
-    "description4":"For people who do not trust solar systems, I recommend that they only choose a good advisor, who is professional and who will accompany them at all times as these girls did with us.",
-    "customer5":"Julieta de sosa",
-    "description5":"They are a company that has not ceased to answer my concerns and questions at every moment and during the process in which the renewable energy project for one of my properties was carried out. They have a lot of patience and dedication in what they do.",
-    "customer6":"Salvador Carrillo",
-    "description6":"I am very happy because from the beginning of the project the girls have been very attentive to everything. They have helped me to get the benefits in a very effective and efficient way."
-  },
-  "Allies":{
-    "title":"Our Allies"
-  },
-  "GetQuote":{
-    "title":"¿Quieres más información?",
-    "text":"Enter Zip Code",
-    "text1":"Encuentranos",
-    "buttonc":"Get Started",
-    "alert":"We’re sorry, is not currently in an area we support.",
-    "subTitle":"I'm interested in:",
-    "codeV":"Check your zip code",
-    "buttonClo":"Close",
-    "buttonA":"Schedule general inspection",
-    "buttonCh":"Checking my current panel system",
-    "buttonR":"Remodeling and maintenance",
-    "buttonI":"Installation of water conditioning systems",
-    "message":"¡Formulario enviado con éxito!",
-    "error":"The zip code is blank. Please enter a valid value."
-  },
+
+
   "Footer":{
     "title":"Do you want more information?",
     "text":"We are ready to provide you the best advice for your business or home.",

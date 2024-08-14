@@ -2,84 +2,39 @@
   "NavBar":{
     "links1": "Inicio",
     "href1":"/",
-    "links2": "Nosotros",
+    "links2": "Sobre mi",
     "href2":"about",
-    "links3":"Servicios",
-    "href3":"/#services",
-    "links4":"Metodologia",
-    "href4":"/#howWill",
+    "links3":"Trabajos",
+    "href3":"works",
+    "links4":"Contacto",
+    "href4":"contact",
     "links5":"English",
-    "href5":"/en",
-    "buttonCont":"Contactanos"
+    "href5":"/en"
   },
 
   "Banner": {
-    "title": "Creando espacios, superando expectativas.",
-    "parrafo1": "¡Tu socio confiable para mejorar tu propiedad! Ofrecemos soluciones personalizadas y efectivas para proyectos de cualquier tamaño, garantizando resultados que superan tus expectativas.",
-    "buttonc": "Contacto",
-    "buttons": "Nuestros Servicios"
+    "subTitle":"Hola, soy Luysmar",
+    "title": "Desarrolador Web",
+    "parrafo1": "Work remotely from South America",
+    "buttonc": "Descargar CV",
+    "buttons": "Ver trabajos"
   },
-  "AboutUs":{
+  "About":{
     "heading":"¿Quiénes somos?",
-    "title":"Sobre nosotras",
-    "subTitle":"¿Por que elegirnos?",
-    "text":"Desde nuestra fundación en 2020, nuestra misión en Monarca Life Improvement ha sido facilitar a nuestros clientes la realización de mejoras en sus propiedades y el impulso de sus negocios, especialmente cuando carecen de los recursos necesarios en el momento crucial. Nos dedicamos a ofrecer soluciones efectivas y personalizadas, buscando constantemente las mejores opciones para satisfacer las necesidades de nuestros clientes y ayudarles a alcanzar sus metas con éxito.",
-    "mision":"Mision",
-    "textM":" Impulsar un futuro sostenible con energía renovable y proyectos de alta calidad. Ofrecemos soluciones innovadoras para reducir gastos y huella ambiental, mejorando la eficiencia y comodidad en hogares y negocios. Queremos liderar el mercado e inspirar un estilo de vida más sustentable.",
-    "vision":"Vision",
-    "textV":"Liderar en energía limpia y construcción sostenible, haciendo estas soluciones accesibles para todos. Imaginamos hogares y negocios con energía solar y remodelaciones de alta calidad, sin barreras financieras, para un futuro más sostenible y equitativo.",
-    "title1":"Enfoque personalizado",
-    "text1":" Nos centramos en las necesidades específicas de cada cliente, ofreciendo soluciones adaptadas a sus requerimientos, a diferencia de las compañías que ofrecen servicios estándar.",
-    "title2":"Flexibilidad en los servicios",
-    "text2":"Nos adaptamos fácilmente a las necesidades cambiantes de cada cliente, con una amplia variedad de opciones y beneficios económicos.",
-    "title3":"Servicios sin costó",
-    "text3":"Ofrecemos inspecciones generales y auditorías de sistemas solares sin costo, generando confianza y seguridad entre el cliente y la compañía.",
-    "title4":"Atención al cliente",
-    "text4":" Ofrecemos un servicio personalizado y de alta calidad, brindando soporte cercano y comunicación directa con cada cliente."
+    "title":"Sobre mi",
+    "hello":"Hola, Soy",
+    "subTitle":"I wonder if I've been changed in the night? Let me think. Was I the same when I got up this morning?",
+    "text":"Programador con +6 de experiencia en desarrollo, diseño e implementación de aplicaciones web. Dominio de varias plataformas. Experiencia en las herramientas y procedimientos de desarrollo más vanguardistas. Buenas habilidades de colaboración dentro de un equipo productivo, fácil aprendizaje facilidad de adaptación, buen desempeño bajo presión.",
+    "title2":"Habilidades",
+    "text2":"",
+    "skill1":"Desarrollo Web",
+    "skill2":"React.JS",
+    "skill3":"Diseno Web",
+    "skill4":"Figma"
   },
-  "HowWeWork":{
-    "title":"¿Como lo haremos?",
-    "text1":"Para comenzar, coordinaremos una cita contigo y tu familia para realizar un diagnóstico detallado de la situación actual que estás enfrentando. Luego, te presentaremos las opciones de solución más adecuadas para tus necesidades específicas.",
-    "text2":"Reemplazo de techo, insolación, ayudarte a cambiar de proveedor eléctrico sin costos. Nuestro objetivo es ofrecerte alternativas personalizadas que respondan efectivamente a tus requerimientos."
-  },
-  "Services":{
-    "title":"Nos especializamos en",
-    "imagen1":"/image/icono-otorgamos.png",
-    "descripcion1":"para proyectos estéticos y funcionales tanto comerciales como residenciales",
-    "paRes1": "Otorgamos hasta $40.000",
-    "paRes11":"",
-
-    "imagen2":"/image/icono-renovacion.png",
-    "descripcion2":"para las propiedades",
-    "paRes2": "Inspecciones",
-    "paRes22":"completamente gratis",
-
-    "imagen3":"/image/icono-panel-solar.png",
-    "descripcion3":"los problemas que tengas con tu actual",
-    "paRes3": "Resolvemos",
-    "paRes33":"sistema de paneles solares",
-
-    "imagen4":"/image/icono-rentable.png",
-    "descripcion4":"de energía",
-    "paRes4": "Proyectos",
-    "paRes44":"renovable",
-
-    "imagen5":"/image/icono-remodelacion.png",
-    "descripcion5":"residenciales y comerciales",
-    "paRes5": "Remodelaciones",
-    "paRes55":"",
-  
-    "imagen6":"/image/icono-instalacion.png",
-    "descripcion6":"de acondicionadores de agua para",
-    "paRes6": "Instalación",
-    "paRes66":"toda tu propiedad",
-
-    "messageW1":"Hola, quiero informacion, sobre: Le otorgamiento de $40.000",
-    "messageW2":"Hola, quiero informacion, sobre: Inspecciones",
-    "messageW3":"Hola, quiero informacion, sobre: Paneles solares",
-    "messageW4":"Hola, quiero informacion, sobre: Proyectos de energia",
-    "messageW5":"Hola, quiero informacion, sobre: Remodelaciones",
-    "messageW6":"Hola, quiero informacion, sobre: Instalacion acondicionadores de agua"
+  "Work":{
+    "title":"Trabajos",
+    "text1":"Below is a list of selected projects I have done. If you have any questions or would like to chat about other things I've worked on."
   },
   "Contact":{
     "title":"Estamos listas para brindarte la mejor asesoria correspondiente para tu negocio o tu hogar.",
@@ -98,43 +53,6 @@
     "message":"¡Formulario enviado con éxito!",
     "services":"Servicio",
     "error":"Por favor, completa todos los campos antes de enviar el formulario."
-  },
-  "Customers":{
-    "title":"¿Qué dicen nuestros clientes?",
-    "text":"Descubre las historias de éxito de nuestros clientes y cómo hemos transformado sus propiedades con soluciones a medida.",
-    "buttons":"Conoce más",
-    "titleS":"¡Historias de exitos!",
-    "customer1":"Gustavo Cortes",
-    "description1":"Mariana y Maria realizaron un gran trabajo en mi casa, logré cambiar mi techo en el momento donde no tenía la disponibilidad de dinero y además de eso no pagar más electricidad ya que tengo un sistema de paneles solares y ahora mis Bill son negativos, no pago a la compañía eléctrica.",
-    "customer2":"Antonia Campos",
-    "description2":"Monarca life improvement, fue el equipo encargado de realizar las remodelaciones que mi casa necesitaba como insolación, reparación de ventanas y la culminación de una de las paredes de la cocina, fue un proceso rápido y sencillo. También recibí bonificaciones que me ayudaron a mejorar situaciones en mi vida personal, este es mi primer año utilizando paneles solares y me ha ido muy bien. Además de eso me indicaron en cada etapa que necesitaba hacer y  me ayudaron a hacerlo.",
-    "customer3":"Héctor Echeverría",
-    "description3":"Trabajar con Monarca cumplió las expectativas que tenía sobre el proyecto que diseñaron para mi y mi familia. En el proyecto se hizo el cambio de mi techo cosa que dependía de mi aseguranza inmobiliaria y no respondieron, esta compañía me ayudó a lograr esto y también eliminar el bill eléctrico de mi propiedad. Ahora tengo 100$ en dólares en crédito y solo tengo 5 meses con mis paneles solares. ",
-    "customer4":"Martha Echeverría",
-    "description4":"Para las personas que no confían en los sistemas solares les recomiendo que solo elijan y un buen asesor, que sea profesional y que los acompañe en todo momento como lo hicieron estas chicas con nosotros.",
-    "customer5":"Julieta de sosa",
-    "description5":"Son una compañía que no ha dejado de responder mis inquietudes y preguntas en cada momento y durante el proceso en el cual se realizó el proyecto de energía renovable para una de mis propiedades. Tienen mucha paciencia y dedicación en lo que hacen. ",
-    "customer6":"Salvador Carrillo",
-    "description6":"Estoy muy feliz porque desde el inicio del proyecto las chicas estuvieron muy al pendiente de todo y me ayudaron a adquirir los beneficios de manera muy efectiva y eficiente."
-  },
-  "Allies":{
-    "title":"Nuestros Aliados"
-  },
-  "GetQuote":{
-    "title":"¿Quieres más información?",
-    "text":"Escribir codigo postal",
-    "text1":"Encuentranos",
-    "buttonc":"Comenzar",
-    "alert":"Lo sentimos, no se encuentra actualmente dentro de nuestras áreas de cobertura.",
-    "subTitle":"Estoy interesado en:",
-    "codeV":"Verifica tu codigo postal",
-    "buttonClo":"Cerrar",
-    "buttonA":"Agendar inspección general",
-    "buttonCh":"Chequeo de mi sistema de paneles actual",
-    "buttonR":"Remodelación y mantenimiento",
-    "buttonI":"Instalación de acondicionamiento de agua",
-    "message":"¡Formulario enviado con éxito!",
-    "error":"El código postal está en blanco. Por favor, ingresa un valor válido."
   },
   "Footer":{
     "title":"¿Quieres más información?",

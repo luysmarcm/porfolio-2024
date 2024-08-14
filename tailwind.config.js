@@ -8,18 +8,19 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				primary: "#3a2d28",
+				primary: "#ffff",
 				secundary: "#a48373",
-				fondo: "#CBAD8C",
+				fondo: "#1111",
 				negro: "#1c2432",
-				m: "#d1c7bd",
-				b: "#F1D2BB",
+				rosado: "#F693A4",
+				morado: "#626ABF",
+				m2: "626ABF",
 				fondo: "#d1c7bd",
 				gris: "#D9D9D9",
 			},
-			fontFamily: {
-				Montserrat: ["Montserrat"],
-			},
+			// fontFamily: {
+			// 	Urbanist: ["Urbanist"],
+			// },
 			screens: {
 				xs: "280px",
 				sm: "640px",
